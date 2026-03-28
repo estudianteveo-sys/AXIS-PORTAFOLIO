@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO -->
+  <title>Axis Studio — Producción Multimedia de Vanguardia con IA | Oaxaca</title>
+  <meta name="description" content="Especialistas en storytelling visual y producción multimedia de vanguardia impulsados por IA. Creatividad con equilibrio desde Oaxaca, México.">
+  <meta name="keywords" content="producción multimedia, video IA, storytelling visual, digital twin, Oaxaca, Axis Studio">
+  <meta name="author" content="Axis Studio">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Axis Studio — Donde la Creatividad Encuentra su Eje">
+  <meta property="og:description" content="Especialistas en storytelling visual y producción multimedia de vanguardia impulsados por IA.">
+  <meta property="og:image" content="assets/logo-black-bg.jpg">
+  <meta property="og:url" content="https://axisstudio.vercel.app">
+  <meta property="og:locale" content="es_MX">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Axis Studio — Producción Multimedia con IA">
+  <meta name="twitter:description" content="Creatividad con equilibrio. Storytelling visual de vanguardia desde Oaxaca.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/logo-black-bg.jpg">
+  
+  <!-- Preconnect to external origins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://www.youtube.com">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <!-- Logo -->
+      <a href="#" class="header__logo" aria-label="Axis Studio - Inicio">
+        <img src="assets/logo-transparent.png" alt="Axis Studio Logo" class="header__logo-img">
+        <div class="header__logo-text">
+          <span class="header__logo-name">AXIS</span>
+          <span class="header__logo-tagline">STUDIO</span>
+        </div>
+      </a>
+      
+      <!-- Right Side: Socials + Hamburger -->
+      <div class="header__right">
+        <div class="header__socials">
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/axisstudioia" target="_blank" rel="noopener noreferrer" class="header__social-link" aria-label="Instagram" id="header-ig">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <!-- TikTok -->
+          <a href="https://www.tiktok.com/@axisstudioia" target="_blank" rel="noopener noreferrer" class="header__social-link" aria-label="TikTok" id="header-tiktok">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V9.17a8.16 8.16 0 0 0 4.77 1.52V7.24a4.85 4.85 0 0 1-1.01-.55z"/>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Menú de navegación" aria-expanded="false">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== NAV OVERLAY ==================== -->
+  <nav class="nav-overlay" id="nav-overlay" aria-label="Navegación principal">
+    <a href="#hero" class="nav-overlay__link">Inicio</a>
+    <a href="#projects" class="nav-overlay__link">Proyectos</a>
+    <a href="#footer" class="nav-overlay__link">Contacto</a>
+    <div class="nav-overlay__socials">
+      <a href="https://www.instagram.com/axisstudioia" target="_blank" rel="noopener noreferrer" class="nav-overlay__social-link" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+      </a>
+      <a href="https://www.tiktok.com/@axisstudioia" target="_blank" rel="noopener noreferrer" class="nav-overlay__social-link" aria-label="TikTok">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V9.17a8.16 8.16 0 0 0 4.77 1.52V7.24a4.85 4.85 0 0 1-1.01-.55z"/>
+        </svg>
+      </a>
+      <a href="mailto:axisstudioiamex@gmail.com" class="nav-overlay__social-link" aria-label="Email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+          <polyline points="22,6 12,13 2,6"></polyline>
+        </svg>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ==================== MAIN CONTENT ==================== -->
+  <main>
+    
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero" id="hero">
+      <div class="hero__content">
+        <div class="hero__eyebrow">Axis Studio</div>
+        <h1 class="hero__title">
+          <span>DONDE LA</span>
+          <span>CREATIVIDAD</span>
+          <span>ENCUENTRA</span>
+          <span>SU EJE</span>
+        </h1>
+        <p class="hero__subtitle">
+          Especialistas en storytelling visual y producción multimedia de vanguardia impulsados por IA.
+        </p>
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--gold" id="cta-explore">
+            Explorar Portafolio
+            <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <polyline points="19 12 12 19 5 12"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS SECTION ========== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 class="section__title">Nuestros Proyectos</h2>
+        </div>
+
+        <div class="projects-grid">
+        <!-- PROYECTO 01: CHICO AVE -->
+        <article class="project-card reveal">
+          <div class="project-card__video">
+            <div class="project-card__video-placeholder" data-video-id="z6vSIzZZLes" data-video-type="youtube" role="button" aria-label="Reproducir video de Chico Ave" tabindex="0">
+              <img src="https://img.youtube.com/vi/z6vSIzZZLes/maxresdefault.jpg" alt="Miniatura del video Chico Ave" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.7;">
+              <div class="play-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-card__body">
+            <span class="project-card__number">PROYECTO 01</span>
+            <h3 class="project-card__title">CHICO AVE — Storytelling Cinematográfico</h3>
+            <span class="project-card__label">BRIEF:</span>
+            <p class="project-card__brief">
+              Producción completa de video basada en Realismo Mágico como motor creativo. Ingeniería visual donde el control humano dicta el resultado final, permitiendo que una idea fantástica se sienta real y profesional.
+            </p>
+            
+            <div class="project-card__actions">
+              <button class="btn btn--ghost" onclick="openModal('modal-tech-1')">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20v-6M9 20v-10M6 20v-4M15 20v-8M18 20V4"/></svg>
+                DETALLES TÉCNICOS
+              </button>
+              <button class="btn btn--gold" onclick="openModal('modal-costs-1')">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                COMPARATIVA Y COSTOS
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROYECTO 02: SONIDO POPULAR -->
+        <article class="project-card reveal">
+          <div class="project-card__video">
+            <div class="project-card__video-placeholder" data-video-id="DV98JWpkXqH" data-video-type="instagram" role="button" aria-label="Reproducir video de Sonido Popular" tabindex="0">
+              <img src="assets/sonido-popular-thumb.png" alt="Miniatura del video Sonido Popular" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.7;">
+              <div class="play-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-card__body">
+            <span class="project-card__number">PROYECTO 02</span>
+            <h3 class="project-card__title">SONIDO POPULAR — Visuales Generativos</h3>
+            <span class="project-card__label">BRIEF:</span>
+            <p class="project-card__brief">
+              Visuales generativos que bailan al ritmo de la música. Un viaje psicodélico y técnico donde el sonido esculpe la imagen en tiempo real mediante algoritmos de IA audioreactivos.
+            </p>
+            
+            <div class="project-card__actions">
+              <button class="btn btn--ghost" onclick="openModal('modal-tech-2')">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20v-6M9 20v-10M6 20v-4M15 20v-8M18 20V4"/></svg>
+                DETALLES TÉCNICOS
+              </button>
+              <button class="btn btn--gold" onclick="openModal('modal-costs-2')">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                COMPARATIVA Y COSTOS
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROYECTO 03: SPINN RADIO -->
+        <article class="project-card reveal">
+          <div class="project-card__video">
+            <div class="project-card__video-placeholder" data-video-id="V-RMAGP9p3A" data-video-type="youtube" role="button" aria-label="Reproducir video de Spinn Radio" tabindex="0">
+              <img src="https://img.youtube.com/vi/V-RMAGP9p3A/maxresdefault.jpg" alt="Miniatura del video Spinn Radio" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.7;">
+              <div class="play-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-card__body">
+            <span class="project-card__number">PROYECTO 03</span>
+            <h3 class="project-card__title">SPINN RADIO — Contenido Viral Nativo</h3>
+            <span class="project-card__label">BRIEF:</span>
+            <p class="project-card__brief">
+              Contenido diseñado para la viralidad en formatos nativos verticales. Estética trendy y montaje rítmico que conecta con las audiencias digitales actuales en tiempo récord.
+            </p>
+            
+            <div class="project-card__actions">
+              <button class="btn btn--ghost" onclick="openModal('modal-tech-3')">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20v-6M9 20v-10M6 20v-4M15 20v-8M18 20V4"/></svg>
+                DETALLES TÉCNICOS
+              </button>
+              <button class="btn btn--gold" onclick="openModal('modal-costs-3')">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                COMPARATIVA Y COSTOS
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROYECTO 04: PROMO ONU -->
+        <article class="project-card reveal">
+          <div class="project-card__video">
+            <div class="project-card__video-placeholder" data-video-id="2kKQSx5TRc8" data-video-type="youtube" role="button" aria-label="Reproducir video de Promo ONU" tabindex="0">
+              <img src="https://img.youtube.com/vi/2kKQSx5TRc8/maxresdefault.jpg" alt="Miniatura del video Promo ONU" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.7;">
+              <div class="play-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-card__body">
+            <span class="project-card__number">PROYECTO 04</span>
+            <h3 class="project-card__title">PROMO ONU — Comunicación Institucional</h3>
+            <span class="project-card__label">BRIEF:</span>
+            <p class="project-card__brief">
+              Mensajes de impacto social elevado mediante narrativa cinematográfica. Transformamos la comunicación institucional en una experiencia audiovisual poderosa que genera confianza.
+            </p>
+            
+            <div class="project-card__actions">
+              <button class="btn btn--ghost" onclick="openModal('modal-tech-4')">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20v-6M9 20v-10M6 20v-4M15 20v-8M18 20V4"/></svg>
+                DETALLES TÉCNICOS
+              </button>
+              <button class="btn btn--gold" onclick="openModal('modal-costs-4')">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                COMPARATIVA Y COSTOS
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROYECTO 05: CON EL CORAZÓN -->
+        <article class="project-card reveal">
+          <div class="project-card__video">
+            <div class="project-card__video-placeholder" data-video-id="qaB1g-FAhM4" data-video-type="youtube" role="button" aria-label="Reproducir video de Con el Corazón" tabindex="0">
+              <img src="https://img.youtube.com/vi/qaB1g-FAhM4/maxresdefault.jpg" alt="Miniatura del video Con el Corazón" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.7;">
+              <div class="play-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-card__body">
+            <span class="project-card__number">PROYECTO 05</span>
+            <h3 class="project-card__title">CON EL CORAZÓN — Storytelling Emocional</h3>
+            <span class="project-card__label">BRIEF:</span>
+            <p class="project-card__brief">
+              Humanizando la tecnología mediante la emoción. Una pieza cinemática que conecta con la esencia humana utilizando herramientas de IA para potenciar la narrativa orgánica.
+            </p>
+            
+            <div class="project-card__actions">
+              <button class="btn btn--ghost" onclick="openModal('modal-tech-5')">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20v-6M9 20v-10M6 20v-4M15 20v-8M18 20V4"/></svg>
+                DETALLES TÉCNICOS
+              </button>
+              <button class="btn btn--gold" onclick="openModal('modal-costs-5')">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                COMPARATIVA Y COSTOS
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer" id="footer">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div>
+          <img src="assets/logo-transparent.png" alt="Axis Studio" class="footer__logo">
+          <p class="footer__tagline" style="margin-top: 12px;">Creatividad con equilibrio.<br>Contacto en Oaxaca.</p>
+        </div>
+        <div class="footer__contact">
+          <a href="mailto:axisstudioiamex@gmail.com" class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            axisstudioiamex@gmail.com
+          </a>
+          <a href="https://wa.me/529511241596" target="_blank" rel="noopener noreferrer" class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            +52 951 124 1596
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__socials" style="justify-content: center;">
+        <a href="https://www.instagram.com/axisstudioia" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Instagram" id="footer-ig">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </a>
+        <a href="https://www.tiktok.com/@axisstudioia" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="TikTok" id="footer-tiktok">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V9.17a8.16 8.16 0 0 0 4.77 1.52V7.24a4.85 4.85 0 0 1-1.01-.55z"/>
+          </svg>
+        </a>
+        <a href="mailto:axisstudioiamex@gmail.com" class="footer__social-link" aria-label="Email" id="footer-email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </a>
+      </div>
+
+      <div class="footer__divider"></div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2025 Axis Studio. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== MODALS ==================== -->
+  
+  <!-- MODALES PROYECTO 01: CHICO AVE -->
+  <div id="modal-tech-1" class="modal">
+    <div class="modal__content">
+      <button class="modal__close" onclick="closeModal('modal-tech-1')" aria-label="Cerrar modal">&times;</button>
+      <div class="modal__header">
+        <h2 class="modal__title">DETALLES TÉCNICOS</h2>
+      </div>
+      <div class="modal__body">
+        <p class="modal__text">
+          <span class="modal__highlight">17 horas de trabajo especializado</span> enfocado en la consistencia absoluta y narrativa de realismo mágico.
+        </p>
+        <div class="tech-list">
+          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title">1. Conceptualización y Storyboarding</span>
+              <span class="tech-item__desc">Diseño de narrativa clara y ángulos de cámara (POV, planos generales) para una visión estructurada.</span>
+            </div>
+          </div>
+          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title">2. Diseño de Personaje y "Digital Twin"</span>
+              <span class="tech-item__desc">Creación de un protagonista con consistencia absoluta (rostro, vestuario, accesorios) en cada toma.</span>
+            </div>
+          </div>
+          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title">3. Continuidad de Entorno</span>
+              <span class="tech-item__desc">Curaduría de decenas de generaciones para mantener iluminación y atmósfera constante de Oaxaca.</span>
+            </div>
+          </div>
+          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title">4. Post-producción y Diseño Sonoro</span>
+              <span class="tech-item__desc">Audio inmersivo, Foley específico (viento, pasos) y corrección de color cinematográfica.</span>
+            </div>
+          </div>
+        </div>
+        <div class="modal__stat">
+          <span class="modal__stat-value">17h</span>
+          <span class="modal__stat-label">de producción especializada</span>
+        </div>
+        <a href="https://wa.me/529511241596?text=Hola%20Axis%20Studio,%20me%20interesa%20un%20proyecto%20similar%20a%20Chico%20Ave" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;">COTIZAR PROYECTO SIMILAR</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-costs-1" class="modal">
+    <div class="modal__content">
+      <button class="modal__close" onclick="closeModal('modal-costs-1')" aria-label="Cerrar modal">&times;</button>
+      <div class="modal__header">
+        <h2 class="modal__title">COMPARATIVA Y COSTOS</h2>
+      </div>
+      <div class="modal__body">
+        <p class="modal__text">
+          Eliminamos la fricción logística y el riesgo operativo, transformando el gasto en <span class="modal__highlight">inversión estratégica</span>.
+        </p>
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Característica</th>
+              <th>Tradicional</th>
+              <th>Axis Studio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Talento</td>
+              <td>Casting físico (Limitado)</td>
+              <td class="highlight-axis">Digital Twins (Exclusivos)</td>
+            </tr>
+            <tr>
+              <td>Entorno</td>
+              <td>Rodaje en sitio (Clima)</td>
+              <td class="highlight-axis">Control Total AI</td>
+            </tr>
+            <tr>
+              <td>Entrega</td>
+              <td>Semanas / Meses</td>
+              <td class="highlight-axis">Días</td>
+            </tr>
+            <tr>
+              <td>Costos</td>
+              <td>100% Gasto</td>
+              <td class="highlight-axis">70% de Reducción</td>
+            </tr>
+            <tr>
+              <td>Derechos</td>
+              <td>Pagos Anuales</td>
+              <td class="highlight-axis">Propiedad Perpetua</td>
+            </tr>
+            <tr>
+              <td>Contenido</td>
+              <td>Pieza Única</td>
+              <td class="highlight-axis">Sagas Evolutivas</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="modal__stat">
+          <span class="modal__stat-value">70%</span>
+          <span class="modal__stat-label">menos en costos logísticos</span>
+        </div>
+        <a href="https://wa.me/529511241596?text=Hola%20Axis%20Studio,%20quiero%20solicitar%20una%20cotización" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;">SOLICITAR COTIZACIÓN</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODALES PROYECTO 02: SONIDO POPULAR -->
+  <div id="modal-tech-2" class="modal">
+    <div class="modal__content">
+      <button class="modal__close" onclick="closeModal('modal-tech-2')" aria-label="Cerrar modal">&times;</button>
+      <div class="modal__header">
+        <h2 class="modal__title">DETALLES TÉCNICOS</h2>
+      </div>
+      <div class="modal__body">
+        <p class="modal__text">
+          <span class="modal__highlight">Arquitectura Audioreactiva</span> donde cada frecuencia de audio afecta parámetros visuales en tiempo real.
+        </p>
+        <div class="tech-list">
+          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title">1. Análisis de Espectro y BPM</span>
+              <span class="tech-item__desc">Extracción de datos rítmicos para sincronizar la generación de imágenes con la música.</span>
+            </div>
+          </div>
+          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title">2. Diseño de Prompt Generativo</span>
+              <span class="tech-item__desc">Creación de mundos psicodélicos que evolucionan fluidamente sin cortes de cámara.</span>
+            </div>
+          </div>
+          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title">3. Interpolación de Movimiento AI</span>
+              <span class="tech-item__desc">Garantizamos una transición suave entre cuadros para un efecto 'morphing' cinematográfico.</span>
+            </div>
+          </div>
+          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title">4. Color Grade Dinámico</span>
+              <span class="tech-item__desc">Corrección de color que pulsa al ritmo del bajo para una experiencia inmersiva.</span>
+            </div>
+          </div>
+        </div>
+        <div class="modal__stat">
+          <span class="modal__stat-value">12h</span>
+          <span class="modal__stat-label">de renderizado audioreactivo</span>
+        </div>
+        <a href="https://wa.me/529511241596?text=Hola%20Axis%20Studio,%20me%20interesa%20un%20proyecto%20similar%20a%20Sonido%20Popular" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;">COTIZAR PROYECTO SIMILAR</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL COSTOS 2 -->
+  <div id="modal-costs-2" class="modal">
+    <div class="modal__content">
+      <button class="modal__close" onclick="closeModal('modal-costs-2')" aria-label="Cerrar modal">&times;</button>
+      <div class="modal__header">
+        <h2 class="modal__title">COMPARATIVA Y COSTOS</h2>
+      </div>
+      <div class="modal__body">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Factor</th>
+              <th>Tradicional</th>
+              <th>Axis Studio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Escenografía</td>
+              <td>Set Físico (Caro)</td>
+              <td class="highlight-axis">Entornos Infinitos IA</td>
+            </tr>
+            <tr>
+              <td>Sincronía</td>
+              <td>Edición Manual</td>
+              <td class="highlight-axis">Automatizado por Audio</td>
+            </tr>
+            <tr>
+              <td>Estética</td>
+              <td>Limitado por reality</td>
+              <td class="highlight-axis">Psicodelia Controlada</td>
+            </tr>
+            <tr>
+              <td>Costo</td>
+              <td>Logística pesada</td>
+              <td class="highlight-axis">80% Ahorro Directo</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="modal__stat">
+          <span class="modal__stat-value">80%</span>
+          <span class="modal__stat-label">ahorro en locaciones físicas</span>
+        </div>
+        <a href="https://wa.me/529511241596?text=Hola%20Axis%20Studio,%20quiero%20solicitar%20una%20cotización" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;">SOLICITAR COTIZACIÓN</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODALES PROYECTO 03: SPINN RADIO -->
+  <div id="modal-tech-3" class="modal">
+    <div class="modal__content">
+      <button class="modal__close" onclick="closeModal('modal-tech-3')" aria-label="Cerrar modal">&times;</button>
+      <div class="modal__header">
+        <h2 class="modal__title">DETALLES TÉCNICOS</h2>
+      </div>
+      <div class="modal__body">
+        <p class="modal__text">
+          <span class="modal__highlight">Formato Nativo 9:16</span> optimizado para algoritmos de retención (TikTok/Reels).
+        </p>
+        <div class="tech-list">
+          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title">1. Análisis de Retención (Hooks)</span>
+              <span class="tech-item__desc">Diseño de los primeros 3 segundos para garantizar engagement máximo.</span>
+            </div>
+          </div>
+          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title">2. Generación Ágil de Assets</span>
+              <span class="tech-item__desc">Uso de IA para crear fondos y efectos 'trendy' de forma ultra-rápida.</span>
+            </div>
+          </div>
+          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title">3. Edición Dinámica y Subtítulos</span>
+              <span class="tech-item__desc">Montaje rítmico con tipografías de alto contraste para visualización sin audio.</span>
+            </div>
+          </div>
+          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title">4. Optimización de Peso</span>
+              <span class="tech-item__desc">Renderizado balanceado para carga instantánea en redes móviles.</span>
+            </div>
+          </div>
+        </div>
+        <div class="modal__stat">
+          <span class="modal__stat-value">48h</span>
+          <span class="modal__stat-label">desde idea a publicación</span>
+        </div>
+        <a href="https://wa.me/529511241596?text=Hola%20Axis%20Studio,%20me%20interesa%20un%20proyecto%20similar%20a%20Spinn%20Radio" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;">COTIZAR PROYECTO SIMILAR</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-costs-3" class="modal">
+    <div class="modal__content">
+      <button class="modal__close" onclick="closeModal('modal-costs-3')" aria-label="Cerrar modal">&times;</button>
+      <div class="modal__header">
+        <h2 class="modal__title">COMPARATIVA Y COSTOS</h2>
+      </div>
+      <div class="modal__body">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Valor</th>
+              <th>Producción TV</th>
+              <th>Axis Studio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Agilidad</td>
+              <td>Semanas (Planificación)</td>
+              <td class="highlight-axis">Horas (Reacción Viral)</td>
+            </tr>
+            <tr>
+              <td>Formato</td>
+              <td>Adaptado (Crop)</td>
+              <td class="highlight-axis">Nativo 9:16 Original</td>
+            </tr>
+            <tr>
+              <td>Inversión</td>
+              <td>Costosa/Puntual</td>
+              <td class="highlight-axis">Económica/Frecuente</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="modal__stat">
+          <span class="modal__stat-value">60%</span>
+          <span class="modal__stat-label">más de engagement orgánico</span>
+        </div>
+        <a href="https://wa.me/529511241596?text=Hola%20Axis%20Studio,%20quiero%20solicitar%20una%20cotización" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;">SOLICITAR COTIZACIÓN</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODALES PROYECTO 04: PROMO ONU -->
+  <div id="modal-tech-4" class="modal">
+    <div class="modal__content">
+      <button class="modal__close" onclick="closeModal('modal-tech-4')" aria-label="Cerrar modal">&times;</button>
+      <div class="modal__header">
+        <h2 class="modal__title">DETALLES TÉCNICOS</h2>
+      </div>
+      <div class="modal__body">
+        <p class="modal__text">
+          <span class="modal__highlight">Comunicación Estratégica</span> con estética cinematográfica para mensajes de alto valor social.
+        </p>
+        <div class="tech-list">
+          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title">1. Curaduría de Guion Institucional</span>
+              <span class="tech-item__desc">Adaptación de mensajes complejos a una narrativa visual clara y empática.</span>
+            </div>
+          </div>
+          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title">2. Estética 'Clean & Premium'</span>
+              <span class="tech-item__desc">Uso de paletas de color sobrias y composiciones equilibradas que inspiran confianza.</span>
+            </div>
+          </div>
+          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title">3. Post-producción de Impacto</span>
+              <span class="tech-item__desc">Integración de motion graphics elegantes para resaltar datos clave y estadísticas.</span>
+            </div>
+          </div>
+          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title">4. Masterización de Audio Vocal</span>
+              <span class="tech-item__desc">Tratamiento de locución para una claridad absoluta y autoridad institucional.</span>
+            </div>
+          </div>
+        </div>
+        <a href="https://wa.me/529511241596?text=Hola%20Axis%20Studio,%20me%20interesa%20un%20proyecto%20similar%20a%20Promo%20ONU" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;">COTIZAR PROYECTO SIMILAR</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-costs-4" class="modal">
+    <div class="modal__content">
+      <button class="modal__close" onclick="closeModal('modal-costs-4')" aria-label="Cerrar modal">&times;</button>
+      <div class="modal__header">
+        <h2 class="modal__title">COMPARATIVA Y COSTOS</h2>
+      </div>
+      <div class="modal__body">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Aspecto</th>
+              <th>Tradicional</th>
+              <th>Axis Studio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Logística</td>
+              <td>Despliegue de equipo</td>
+              <td class="highlight-axis">Eficiencia Digital</td>
+            </tr>
+            <tr>
+              <td>Estética</td>
+              <td>Video Corporativo Plano</td>
+              <td class="highlight-axis">Cinematografía Institucional</td>
+            </tr>
+            <tr>
+              <td>Ahorro</td>
+              <td>0%</td>
+              <td class="highlight-axis">70% de reducción</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="modal__stat">
+          <span class="modal__stat-value">70%</span>
+          <span class="modal__stat-label">reducción en despliegue logístico</span>
+        </div>
+        <a href="https://wa.me/529511241596?text=Hola%20Axis%20Studio,%20quiero%20solicitar%20una%20cotización" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;">SOLICITAR COTIZACIÓN</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODALES PROYECTO 05: CON EL CORAZÓN -->
+  <div id="modal-tech-5" class="modal">
+    <div class="modal__content">
+      <button class="modal__close" onclick="closeModal('modal-tech-5')" aria-label="Cerrar modal">&times;</button>
+      <div class="modal__header">
+        <h2 class="modal__title">DETALLES TÉCNICOS</h2>
+      </div>
+      <div class="modal__body">
+        <p class="modal__text">
+          <span class="modal__highlight">Humanización Digital</span> combinando storytelling clásico con potencia visual de IA generativa.
+        </p>
+        <div class="tech-list">
+          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title">1. Diseño de Narrativa Emocional</span>
+              <span class="tech-item__desc">Construcción de guion basada en sentimientos universales para conexión profunda.</span>
+            </div>
+          </div>
+          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title">2. Creación de 'Digital Twins' Empáticos</span>
+              <span class="tech-item__desc">Generación de personajes con expresiones realistas que transmiten emociones genuinas.</span>
+            </div>
+          </div>
+          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title">3. Iluminación Orgánica AI</span>
+              <span class="tech-item__desc">Simulación de luz cinematográfica natural para eliminar la sensación 'plástica' del 3D.</span>
+            </div>
+          </div>
+          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title">4. Diseño Sonoro del Corazón</span>
+              <span class="tech-item__desc">Música original y foley orgánico diseñado para conmover y cautivar.</span>
+            </div>
+          </div>
+        </div>
+        <a href="https://wa.me/529511241596?text=Hola%20Axis%20Studio,%20me%20interesa%20un%20proyecto%20similar%20a%20Con%20el%20Corazón" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;">COTIZAR PROYECTO SIMILAR</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-costs-5" class="modal">
+    <div class="modal__content">
+      <button class="modal__close" onclick="closeModal('modal-costs-5')" aria-label="Cerrar modal">&times;</button>
+      <div class="modal__header">
+        <h2 class="modal__title">COMPARATIVA Y COSTOS</h2>
+      </div>
+      <div class="modal__body">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Factor</th>
+              <th>Actores Físicos</th>
+              <th>Axis Studio Digital Twins</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Disponibilidad</td>
+              <td>Sujeto a agenda/clima</td>
+              <td class="highlight-axis">24/7 Sin límites</td>
+            </tr>
+            <tr>
+              <td>Propiedad</td>
+              <td>Derechos temporales</td>
+              <td class="highlight-axis">Propiedad Perpetua</td>
+            </tr>
+            <tr>
+              <td>Costo</td>
+              <td>Renovaciones constantes</td>
+              <td class="highlight-axis">Inversión única en activo</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="modal__stat">
+          <span class="modal__stat-value">100%</span>
+          <span class="modal__stat-label">propiedad exclusiva de activos digitales</span>
+        </div>
+        <a href="https://wa.me/529511241596?text=Hola%20Axis%20Studio,%20quiero%20solicitar%20una%20cotización" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;">SOLICITAR COTIZACIÓN</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== WHATSAPP FLOAT ==================== -->
+  <div class="whatsapp-float">
+    <span class="whatsapp-float__tooltip">¡Escríbenos!</span>
+    <a href="https://wa.me/529511241596?text=Hola%2C%20me%20interesa%20conocer%20más%20sobre%20Axis%20Studio" target="_blank" rel="noopener noreferrer" class="whatsapp-float__btn" aria-label="Contactar por WhatsApp" id="whatsapp-btn">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- ==================== SCRIPTS ==================== -->
+  <script src="js/main.js"></script>
+</body>
+</html>
