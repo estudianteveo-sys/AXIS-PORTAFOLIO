@@ -635,8 +635,20 @@ ul, ol {
 /* Card Buttons */
 .project-card__actions {
   display: flex;
-  flex-direction: column;
-  gap: var(--space-md);
+  flex-direction: row;
+  gap: var(--space-sm);
+  width: 100%;
+}
+
+.project-card__actions .btn {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 4px;
+  font-size: 0.7rem;
+  text-align: center;
+  white-space: normal;
 }
 
 .project-card__actions .btn {
@@ -1084,10 +1096,13 @@ ul, ol {
 
   .project-card__actions {
     flex-direction: row;
+    gap: var(--space-md);
   }
 
   .project-card__actions .btn {
     flex: 1;
+    padding: var(--space-md) var(--space-xl);
+    font-size: 0.85rem;
   }
 
   .footer__top {

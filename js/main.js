@@ -158,7 +158,8 @@ function initLazyYouTube() {
       iframe.src = `https://www.instagram.com/reel/${videoId}/embed/`;
     } else {
       // Use nocookie domain for better compatibility and privacy
-      iframe.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0&mute=1`;
+      // Added vq=hd720 & controls=1 & mute=0 per user request
+      iframe.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0&mute=0&vq=hd720&controls=1`;
     }
     
     iframe.title = videoType === 'instagram' ? 'Instagram reel' : 'YouTube video';
