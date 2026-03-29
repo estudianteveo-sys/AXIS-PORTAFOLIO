@@ -201,21 +201,21 @@ ul, ol {
 .header__right {
   display: flex;
   align-items: center;
-  gap: var(--space-lg);
+  gap: var(--space-sm);
 }
 
 .header__socials {
   display: flex;
   align-items: center;
-  gap: var(--space-md);
+  gap: 4px;
 }
 
 .header__social-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   color: var(--c-white);
   opacity: 0.7;
   transition: opacity var(--transition-fast), color var(--transition-fast);
@@ -227,8 +227,8 @@ ul, ol {
 }
 
 .header__social-link svg {
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
 }
 
 /* === HAMBURGER MENU BUTTON === */
@@ -1092,6 +1092,24 @@ ul, ol {
 
   .hero__title {
     font-size: var(--fs-4xl);
+  }
+
+  .header__right {
+    gap: var(--space-lg);
+  }
+
+  .header__socials {
+    gap: var(--space-md);
+  }
+
+  .header__social-link {
+    width: 32px;
+    height: 32px;
+  }
+
+  .header__social-link svg {
+    width: 18px;
+    height: 18px;
   }
 
   .project-card__actions {
