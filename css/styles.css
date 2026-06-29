@@ -1159,6 +1159,15 @@ ul, ol {
     height: 18px;
   }
 
+  /* Web/desktop scale overrides for play button */
+  .play-btn {
+    left: 32px;
+  }
+  .play-btn svg {
+    width: 80px;
+    height: 80px;
+  }
+
   .project-card__actions {
     flex-direction: row;
     gap: var(--space-md);
