@@ -1441,25 +1441,25 @@ ul, ol {
 }
 
 /* =======================================
-   DESIGN OPTION 1 (Card 1): SOLID PREMIUM GOLD (STANDARD)
+   FINAL STYLE: SERVICES CARD AMARILLO (Gold bg, black text)
    ======================================= */
-.services-card--style-1 {
+.services-card--amarillo {
   background-color: var(--c-gold);
   border: 1px solid var(--c-gold);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
-.services-card--style-1 .services-banner__item-title {
+.services-card--amarillo .services-banner__item-title {
   color: var(--c-black);
 }
-.services-card--style-1 .services-banner__item-desc {
+.services-card--amarillo .services-banner__item-desc {
   color: rgba(0, 0, 0, 0.85);
 }
-.services-card--style-1 .services-banner__icon {
-  background: rgba(0, 0, 0, 0.15);
-  border: 1px solid rgba(0, 0, 0, 0.2);
+.services-card--amarillo .services-banner__icon {
+  background: rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(0, 0, 0, 0.18);
   color: var(--c-black);
 }
-.services-card--style-1:hover {
+.services-card--amarillo:hover {
   background-color: var(--c-gold-light);
   border-color: var(--c-gold-light);
   transform: translateY(-4px);
@@ -1467,149 +1467,35 @@ ul, ol {
 }
 
 /* =======================================
-   DESIGN OPTION 2 (Card 2): BRIGHT GOLD GRADIENT
+   FINAL STYLE: SERVICES CARD NEGRO (Black bg, gold border, gold text)
    ======================================= */
-.services-card--style-2 {
-  background: linear-gradient(135deg, #D4AF37 0%, #A67C1E 100%);
-  border: 1px solid #D4AF37;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-}
-.services-card--style-2 .services-banner__item-title {
-  color: var(--c-black);
-  font-weight: 800;
-}
-.services-card--style-2 .services-banner__item-desc {
-  color: rgba(0, 0, 0, 0.85);
-}
-.services-card--style-2 .services-banner__icon {
-  background: rgba(0, 0, 0, 0.15);
-  border: 1px solid rgba(0, 0, 0, 0.25);
-  color: var(--c-black);
-}
-.services-card--style-2:hover {
-  background: linear-gradient(135deg, #E5C158 0%, #B58A28 100%);
-  transform: translateY(-4px);
-  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.45);
-}
-
-/* =======================================
-   DESIGN OPTION 3 (Card 3): DARK ACCENT WITH GOLD OUTLINE BORDER
-   ======================================= */
-.services-card--style-3 {
-  background: #0A0A0A;
-  border: 2px solid var(--c-gold);
+.services-card--negro {
+  background-color: #0A0A0A;
+  border: 1px solid var(--c-gold);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
-.services-card--style-3 .services-banner__item-title {
+.services-card--negro .services-banner__item-title {
   color: var(--c-gold);
 }
-.services-card--style-3 .services-banner__item-desc {
-  color: var(--c-gray-300);
-}
-.services-card--style-3 .services-banner__icon {
-  background: rgba(197, 160, 89, 0.1);
-  border: 1px solid var(--c-gold);
-  color: var(--c-gold);
-}
-.services-card--style-3:hover {
-  background: #121212;
-  border-color: var(--c-gold-light);
-  transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(197, 160, 89, 0.25);
-}
-.services-card--style-3:hover .services-banner__item-title {
-  color: var(--c-gold-light);
-}
-
-/* =======================================
-   DESIGN OPTION 4 (Card 4): GLASSMORPHIC TINTED GOLD
-   ======================================= */
-.services-card--style-4 {
-  background: rgba(197, 160, 89, 0.28);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(197, 160, 89, 0.55);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
-}
-.services-card--style-4 .services-banner__item-title {
-  color: var(--c-white);
-  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
-}
-.services-card--style-4 .services-banner__item-desc {
-  color: var(--c-gray-100);
-}
-.services-card--style-4 .services-banner__icon {
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: var(--c-white);
-}
-.services-card--style-4:hover {
-  background: rgba(197, 160, 89, 0.45);
-  border-color: var(--c-gold-light);
-  transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(197, 160, 89, 0.3);
-}
-
-/* =======================================
-   DESIGN OPTION 5 (Card 5): DUAL TONE REACTIVE (TURNS SOLID GOLD ON HOVER)
-   ======================================= */
-.services-card--style-5 {
-  background: rgba(10, 10, 10, 0.7);
-  border: 1px solid rgba(197, 160, 89, 0.2);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-.services-card--style-5 .services-banner__item-title {
-  color: var(--c-white);
-}
-.services-card--style-5 .services-banner__item-desc {
-  color: var(--c-gray-400);
-}
-.services-card--style-5 .services-banner__icon {
-  background: rgba(197, 160, 89, 0.06);
-  border: 1px solid rgba(197, 160, 89, 0.2);
-  color: var(--c-gold);
-}
-.services-card--style-5:hover {
-  background: var(--c-gold);
-  border-color: var(--c-gold);
-  transform: translateY(-4px);
-  box-shadow: 0 10px 30px rgba(197, 160, 89, 0.45);
-}
-.services-card--style-5:hover .services-banner__item-title {
-  color: var(--c-black);
-}
-.services-card--style-5:hover .services-banner__item-desc {
-  color: rgba(0, 0, 0, 0.85);
-}
-.services-card--style-5:hover .services-banner__icon {
-  background: rgba(0, 0, 0, 0.15);
-  border-color: rgba(0, 0, 0, 0.2);
-  color: var(--c-black);
-}
-
-/* =======================================
-   DESIGN OPTION 6 (Card 6): MATTE BLACK & GOLD ACCENTS
-   ======================================= */
-.services-card--style-6 {
-  background: #0e0e0e;
-  border: 1px solid rgba(197, 160, 89, 0.35);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
-}
-.services-card--style-6 .services-banner__item-title {
-  color: var(--c-gold-light);
-}
-.services-card--style-6 .services-banner__item-desc {
+.services-card--negro .services-banner__item-desc {
   color: #DDD0B5;
 }
-.services-card--style-6 .services-banner__icon {
+.services-card--negro .services-banner__icon {
   background: rgba(197, 160, 89, 0.08);
   border: 1px solid rgba(197, 160, 89, 0.25);
+  color: var(--c-gold);
+}
+.services-card--negro:hover {
+  background-color: #121212;
+  border-color: var(--c-gold-light);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(197, 160, 89, 0.25);
+}
+.services-card--negro:hover .services-banner__item-title {
   color: var(--c-gold-light);
 }
-.services-card--style-6:hover {
-  background: #141414;
-  border-color: var(--c-gold);
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(197, 160, 89, 0.2);
+.services-card--negro:hover .services-banner__item-desc {
+  color: var(--c-white);
 }
 
 @media (min-width: 768px) {
