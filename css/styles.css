@@ -599,10 +599,6 @@ ul, ol {
 }
 
 .play-btn {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  background: var(--c-gold);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -611,21 +607,26 @@ ul, ol {
   left: 24px; /* Move play button to the left side of the video preview */
   transform: translateY(-50%);
   z-index: 3;
-  transition: transform var(--transition-spring), box-shadow var(--transition-base), background-color var(--transition-base);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5), 0 0 0 0px rgba(197, 160, 89, 0.3);
+  transition: transform var(--transition-spring);
+  background: transparent; /* No circle background */
+  border: none;
 }
 
 .project-card:hover .play-btn {
-  transform: translateY(-50%) scale(1.08);
-  background-color: var(--c-gold-light);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6), 0 0 0 8px rgba(197, 160, 89, 0.2);
+  transform: translateY(-50%) scale(1.15); /* Elevate slightly on hover */
 }
 
 .play-btn svg {
-  width: 20px;
-  height: 20px;
-  color: var(--c-black);
-  margin-left: 2px;
+  width: 46px; /* Large play triangle */
+  height: 46px;
+  color: var(--c-gold); /* Solid gold fill color */
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.85)); /* High contrast shadow behind the triangle */
+  transition: color var(--transition-base), filter var(--transition-base);
+}
+
+.project-card:hover .play-btn svg {
+  color: var(--c-gold-light); /* Bright gold color on hover */
+  filter: drop-shadow(0 0 15px rgba(197, 160, 89, 0.75)) drop-shadow(0 4px 12px rgba(0, 0, 0, 0.95)); /* Glowing gold effect + drop shadow */
 }
 
 /* Card Body */
