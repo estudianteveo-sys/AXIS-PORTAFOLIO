@@ -32,7 +32,7 @@
   <link rel="preconnect" href="https://www.youtube.com">
   
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css?v=2.0">
 </head>
 <body>
 
@@ -48,8 +48,14 @@
         </div>
       </a>
       
-      <!-- Right Side: Socials + Hamburger -->
+      <!-- Right Side: Lang Toggle + Socials + Hamburger -->
       <div class="header__right">
+        <!-- Language Toggle -->
+        <div class="lang-toggle" id="lang-toggle">
+          <span class="lang-toggle__option active" data-lang="es">ES</span>
+          <span class="lang-toggle__option" data-lang="en">EN</span>
+        </div>
+
         <div class="header__socials">
           <!-- Instagram -->
           <a href="https://www.instagram.com/axisstudioia" target="_blank" rel="noopener noreferrer" class="header__social-link" aria-label="Instagram" id="header-ig">
@@ -65,12 +71,12 @@
               <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V9.17a8.16 8.16 0 0 0 4.77 1.52V7.24a4.85 4.85 0 0 1-1.01-.55z"/>
             </svg>
           </a>
+          <!-- YouTube -->
           <a href="http://www.youtube.com/@Axisstudioia" target="_blank" rel="noopener noreferrer" class="header__social-link" aria-label="YouTube">
             <svg viewBox="0 0 24 24" fill="currentColor">
               <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.377.55a3.016 3.016 0 0 0-2.122 2.136C0 8.07 0 12 0 12s0 3.93.501 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.55 9.377.55 9.377.55s7.505 0 9.377-.55a3.016 3.016 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
             </svg>
           </a>
-
         </div>
         
         <!-- Hamburger -->
@@ -85,9 +91,10 @@
 
   <!-- ==================== NAV OVERLAY ==================== -->
   <nav class="nav-overlay" id="nav-overlay" aria-label="Navegación principal">
-    <a href="#hero" class="nav-overlay__link">Inicio</a>
-    <a href="#projects" class="nav-overlay__link">Proyectos</a>
-    <a href="#footer" class="nav-overlay__link">Contacto</a>
+    <a href="#hero" class="nav-overlay__link" data-i18n="nav.projects">Inicio</a>
+    <a href="#projects" class="nav-overlay__link" data-i18n="nav.projects">Proyectos</a>
+    <a href="#services" class="nav-overlay__link" data-i18n="nav.services">Servicios</a>
+    <a href="#footer" class="nav-overlay__link" data-i18n="nav.contact">Contacto</a>
     <div class="nav-overlay__socials">
       <a href="https://www.instagram.com/axisstudioia" target="_blank" rel="noopener noreferrer" class="nav-overlay__social-link" aria-label="Instagram">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -101,12 +108,11 @@
           <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V9.17a8.16 8.16 0 0 0 4.77 1.52V7.24a4.85 4.85 0 0 1-1.01-.55z"/>
         </svg>
       </a>
-          <a href="http://www.youtube.com/@Axisstudioia" target="_blank" rel="noopener noreferrer" class="nav-overlay__social-link" aria-label="YouTube">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.377.55a3.016 3.016 0 0 0-2.122 2.136C0 8.07 0 12 0 12s0 3.93.501 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.55 9.377.55 9.377.55s7.505 0 9.377-.55a3.016 3.016 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-            </svg>
-          </a>
-
+      <a href="http://www.youtube.com/@Axisstudioia" target="_blank" rel="noopener noreferrer" class="nav-overlay__social-link" aria-label="YouTube">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.377.55a3.016 3.016 0 0 0-2.122 2.136C0 8.07 0 12 0 12s0 3.93.501 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.55 9.377.55 9.377.55s7.505 0 9.377-.55a3.016 3.016 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+        </svg>
+      </a>
       <a href="mailto:axisstudioiamex@gmail.com" class="nav-overlay__social-link" aria-label="Email">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
@@ -122,23 +128,16 @@
     <!-- ========== HERO SECTION ========== -->
     <section class="hero" id="hero">
       <div class="hero__content">
-        <div class="hero__eyebrow">Axis Studio</div>
-        <h1 class="hero__title">
-          <span>DONDE LA</span>
-          <span>CREATIVIDAD</span>
-          <span>ENCUENTRA</span>
-          <span>SU EJE</span>
+        <div class="hero__eyebrow" data-i18n="hero.eyebrow">ESTUDIO CREATIVO CON IA</div>
+        <h1 class="hero__title" data-i18n-html="hero.title">
+          <span>Donde la</span><span>Creatividad</span><span>Encuentra su Eje.</span>
         </h1>
-        <p class="hero__subtitle">
-          Especialistas en storytelling visual y producción multimedia de vanguardia impulsados por IA.
+        <p class="hero__subtitle" data-i18n="hero.subtitle">
+          Especialistas en storytelling visual y producción multimedia de vanguardia impulsados por Inteligencia Artificial.
         </p>
         <div class="hero__cta">
-          <a href="#projects" class="btn btn--gold" id="cta-explore">
-            Explorar Portafolio
-            <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="12" y1="5" x2="12" y2="19"></line>
-              <polyline points="19 12 12 19 5 12"></polyline>
-            </svg>
+          <a href="#projects" class="btn btn--gold" id="cta-explore" data-i18n="hero.cta">
+            VER PROYECTOS
           </a>
         </div>
       </div>
@@ -148,202 +147,550 @@
     <section class="section" id="projects">
       <div class="container">
         <div class="section__header reveal">
-          <h2 class="section__title">Nuestros Proyectos</h2>
+          <h2 class="section__title" data-i18n="section.projects">Nuestros Proyectos</h2>
         </div>
-
-        <div class="projects-grid">
-        <!-- PROYECTO 01: CHICO AVE -->
-        <article class="project-card reveal">
-          <div class="project-card__video">
-            <div class="project-card__video-placeholder" data-video-id="e0mb9-tjuXU" data-video-type="youtube" role="button" aria-label="Reproducir video de Chico Ave" tabindex="0">
-              <img src="https://img.youtube.com/vi/e0mb9-tjuXU/maxresdefault.jpg" alt="Miniatura del video Chico Ave" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:left center;opacity:0.7;">
-              <div class="play-btn">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                </svg>
-              </div>
-            </div>
-          </div>
-          
-          <div class="project-card__body">
-            <span class="project-card__number">PROYECTO 01</span>
-            <h3 class="project-card__title">CHICO AVE — Storytelling Cinematográfico</h3>
-            <span class="project-card__label">BRIEF:</span>
-            <p class="project-card__brief">
-              Producción completa de video basada en Realismo Mágico como motor creativo. Ingeniería visual donde el control humano dicta el resultado final, permitiendo que una idea fantástica se sienta real y profesional.
-            </p>
-            
-            <div class="project-card__actions">
-              <button class="btn btn--ghost" onclick="openModal('modal-tech-1')">
-                DETALLES TÉCNICOS
-              </button>
-              <button class="btn btn--gold" onclick="openModal('modal-costs-1')">
-                COMPARATIVA Y COSTOS
-              </button>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROYECTO 02: SONIDO POPULAR -->
-        <article class="project-card reveal">
-          <div class="project-card__video">
-            <div class="project-card__video-placeholder" data-video-id="AkvtkMkt62c" data-video-type="youtube" role="button" aria-label="Reproducir video de Sonido Popular" tabindex="0">
-              <img src="https://img.youtube.com/vi/AkvtkMkt62c/maxresdefault.jpg" alt="Miniatura del video Sonido Popular" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.7;">
-              <div class="play-btn">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                </svg>
-              </div>
-            </div>
-          </div>
-          
-          <div class="project-card__body">
-            <span class="project-card__number">PROYECTO 02</span>
-            <h3 class="project-card__title">SONIDO POPULAR — Visuales Generativos</h3>
-            <span class="project-card__label">BRIEF:</span>
-            <p class="project-card__brief">
-              Visuales generativos que bailan al ritmo de la música. Un viaje psicodélico y técnico donde el sonido esculpe la imagen en tiempo real mediante algoritmos de IA audioreactivos.
-            </p>
-            
-            <div class="project-card__actions">
-              <button class="btn btn--ghost" onclick="openModal('modal-tech-2')">
-                DETALLES TÉCNICOS
-              </button>
-              <button class="btn btn--gold" onclick="openModal('modal-costs-2')">
-                COMPARATIVA Y COSTOS
-              </button>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROYECTO 03: AXIS UGC CLOTHING -->
-        <article class="project-card reveal">
-          <div class="project-card__video">
-            <div class="project-card__video-placeholder" data-video-id="3K5XHw7VKy4" data-video-type="youtube" role="button" aria-label="Reproducir video de Axis UGC Clothing" tabindex="0">
-              <img src="https://img.youtube.com/vi/3K5XHw7VKy4/maxresdefault.jpg" alt="Miniatura del video Axis UGC Clothing" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.7;">
-              <div class="play-btn">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                </svg>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card__body">
-            <span class="project-card__number">PROYECTO 03</span>
-            <h3 class="project-card__title">AXIS UGC CLOTHING — Moda y Realismo</h3>
-            <span class="project-card__label">BRIEF:</span>
-            <p class="project-card__brief">
-              La Evolución del Contenido de Marca. Creamos avatares digitales que personifican la marca y promocionan productos con realismo total, eliminando las barreras de logística, contratación de modelos y sesiones fotográficas tradicionales.
-            </p>
-
-            <div class="project-card__actions">
-              <button class="btn btn--ghost" onclick="openModal('modal-tech-3')">
-                DETALLES TÉCNICOS
-              </button>
-              <button class="btn btn--gold" onclick="openModal('modal-costs-3')">
-                COMPARATIVA Y COSTOS
-              </button>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROYECTO 04: SPINN RADIO -->
-        <article class="project-card reveal">
-          <div class="project-card__video">
-            <div class="project-card__video-placeholder" data-video-id="1P6fefKj33c" data-video-type="youtube" role="button" aria-label="Reproducir video de Spinn Radio" tabindex="0">
-              <img src="https://img.youtube.com/vi/1P6fefKj33c/maxresdefault.jpg" alt="Miniatura del video Spinn Radio" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.7;">
-              <div class="play-btn">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                </svg>
-              </div>
-            </div>
-          </div>
-          
-          <div class="project-card__body">
-            <span class="project-card__number">PROYECTO 04</span>
-            <h3 class="project-card__title">SPINN RADIO — Contenido Viral Nativo</h3>
-            <span class="project-card__label">BRIEF:</span>
-            <p class="project-card__brief">
-              Contenido diseñado para la viralidad en formatos nativos verticales. Estética trendy y montaje rítmico que conecta con las audiencias digitales actuales en tiempo récord.
-            </p>
-            
-            <div class="project-card__actions">
-              <button class="btn btn--ghost" onclick="openModal('modal-tech-4')">
-                DETALLES TÉCNICOS
-              </button>
-              <button class="btn btn--gold" onclick="openModal('modal-costs-4')">
-                COMPARATIVA Y COSTOS
-              </button>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROYECTO 05: PROMO ONU -->
-        <article class="project-card reveal">
-          <div class="project-card__video">
-            <div class="project-card__video-placeholder" data-video-id="2nb_XtuAvZo" data-video-type="youtube" role="button" aria-label="Reproducir video de Promo ONU" tabindex="0">
-              <img src="https://img.youtube.com/vi/2nb_XtuAvZo/maxresdefault.jpg" alt="Miniatura del video Promo ONU" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.7;">
-              <div class="play-btn">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                </svg>
-              </div>
-            </div>
-          </div>
-          
-          <div class="project-card__body">
-            <span class="project-card__number">PROYECTO 05</span>
-            <h3 class="project-card__title">PROMO ONU — Comunicación Institucional</h3>
-            <span class="project-card__label">BRIEF:</span>
-            <p class="project-card__brief">
-              Mensajes de impacto social elevado mediante narrativa cinematográfica. Transformamos la comunicación institucional en una experiencia audiovisual poderosa que genera confianza.
-            </p>
-            
-            <div class="project-card__actions">
-              <button class="btn btn--ghost" onclick="openModal('modal-tech-5')">
-                DETALLES TÉCNICOS
-              </button>
-              <button class="btn btn--gold" onclick="openModal('modal-costs-5')">
-                COMPARATIVA Y COSTOS
-              </button>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROYECTO 06: CON EL CORAZÓN -->
-        <article class="project-card reveal">
-          <div class="project-card__video">
-            <div class="project-card__video-placeholder" data-video-id="YdQOSBjJH3I" data-video-type="youtube" role="button" aria-label="Reproducir video de Con el Corazón" tabindex="0">
-              <img src="https://img.youtube.com/vi/YdQOSBjJH3I/maxresdefault.jpg" alt="Miniatura del video Con el Corazón" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.7;">
-              <div class="play-btn">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                </svg>
-              </div>
-            </div>
-          </div>
-          
-          <div class="project-card__body">
-            <span class="project-card__number">PROYECTO 06</span>
-            <h3 class="project-card__title">CON EL CORAZÓN — Storytelling Emocional</h3>
-            <span class="project-card__label">BRIEF:</span>
-            <p class="project-card__brief">
-              Humanizando la tecnología mediante la emoción. Una pieza cinemática que conecta con la esencia humana utilizando herramientas de IA para potenciar la narrativa orgánica.
-            </p>
-            
-            <div class="project-card__actions">
-              <button class="btn btn--ghost" onclick="openModal('modal-tech-6')">
-                DETALLES TÉCNICOS
-              </button>
-              <button class="btn btn--gold" onclick="openModal('modal-costs-6')">
-                COMPARATIVA Y COSTOS
-              </button>
-            </div>
-          </div>
-        </article>
       </div>
+
+      <!-- CATEGORY 01: STORYTELLING -->
+      <section class="category-section" id="cat-storytelling">
+        <div class="container">
+          <div class="category-header reveal">
+            <span class="category-header__number">01</span>
+            <h2 class="category-header__title" data-i18n="cat.storytelling">STORYTELLING</h2>
+            <p class="category-header__subtitle" data-i18n="cat.storytelling.sub">Narrativa visual y realismo mágico</p>
+            <div class="category-header__line"><span class="category-header__ornament"></span></div>
+          </div>
+          <div class="projects-grid">
+                        <!-- PROYECTO 01 -->
+            <article class="project-card reveal">
+              <div class="project-card__video">
+                <div class="project-card__video-placeholder" data-video-id="e0mb9-tjuXU" data-video-type="youtube">
+                  <img src="https://img.youtube.com/vi/e0mb9-tjuXU/maxresdefault.jpg" alt="CHICO AVE — Storytelling Cinematográfico" loading="lazy">
+                  <div class="play-btn">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <span class="project-card__number" data-i18n="p1.number">PROYECTO 01</span>
+                <h3 class="project-card__title" data-i18n="p1.title">CHICO AVE — Storytelling Cinematográfico</h3>
+                <span class="project-card__label" data-i18n="label.brief">BRIEF:</span>
+                <p class="project-card__brief" data-i18n="p1.brief">Producción completa de video basada en Realismo Mágico como motor creativo. Ingeniería visual donde el control humano dicta el resultado final, permitiendo que una idea fantástica se sienta real y profesional.</p>
+                <div class="project-card__actions">
+                  <button class="btn btn--ghost" onclick="openModal('modal-tech-1')" data-i18n="btn.tech">DETALLES TÉCNICOS</button>
+                  <button class="btn btn--gold" onclick="openModal('modal-costs-1')" data-i18n="btn.costs">COMPARATIVA Y COSTOS</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROYECTO 02 -->
+            <article class="project-card reveal">
+              <div class="project-card__video">
+                <div class="project-card__video-placeholder" data-video-id="1o2bh4WTP8w" data-video-type="youtube">
+                  <img src="https://img.youtube.com/vi/1o2bh4WTP8w/maxresdefault.jpg" alt="CHERNÓBIL 1986 — Viaje en el Tiempo" loading="lazy">
+                  <div class="play-btn">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <span class="project-card__number" data-i18n="p2.number">PROYECTO 02</span>
+                <h3 class="project-card__title" data-i18n="p2.title">CHERNÓBIL 1986 — Viaje en el Tiempo</h3>
+                <span class="project-card__label" data-i18n="label.brief">BRIEF:</span>
+                <p class="project-card__brief" data-i18n="p2.brief">Recreación cinematográfica del desastre nuclear de Chernóbil con precisión histórica. Estructuras escenográficas industriales, simulaciones atmosféricas de humo y partículas, y lógica multi-actor de IA para un thriller de viaje en el tiempo.</p>
+                <div class="project-card__actions">
+                  <button class="btn btn--ghost" onclick="openModal('modal-tech-2')" data-i18n="btn.tech">DETALLES TÉCNICOS</button>
+                  <button class="btn btn--gold" onclick="openModal('modal-costs-2')" data-i18n="btn.costs">COMPARATIVA Y COSTOS</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROYECTO 03 -->
+            <article class="project-card reveal">
+              <div class="project-card__video">
+                <div class="project-card__video-placeholder" data-video-id="V4-yBL39xKA" data-video-type="youtube">
+                  <img src="https://img.youtube.com/vi/V4-yBL39xKA/maxresdefault.jpg" alt="RETRO BRITÁNICO 70's — Narrativa de Época" loading="lazy">
+                  <div class="play-btn">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <span class="project-card__number" data-i18n="p3.number">PROYECTO 03</span>
+                <h3 class="project-card__title" data-i18n="p3.title">RETRO BRITÁNICO 70's — Narrativa de Época</h3>
+                <span class="project-card__label" data-i18n="label.brief">BRIEF:</span>
+                <p class="project-card__brief" data-i18n="p3.brief">Narrativa histórica inmersiva que captura la textura y atmósfera de una tienda de barrio británica de los años 70. Consistencia excepcional en diseño de escenarios de época, generación de objetos y suspense narrativo.</p>
+                <div class="project-card__actions">
+                  <button class="btn btn--ghost" onclick="openModal('modal-tech-3')" data-i18n="btn.tech">DETALLES TÉCNICOS</button>
+                  <button class="btn btn--gold" onclick="openModal('modal-costs-3')" data-i18n="btn.costs">COMPARATIVA Y COSTOS</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CATEGORY 02: VIDEOS MUSICALES -->
+      <section class="category-section" id="cat-music">
+        <div class="container">
+          <div class="category-header reveal">
+            <span class="category-header__number">02</span>
+            <h2 class="category-header__title" data-i18n="cat.music">VIDEOS MUSICALES</h2>
+            <p class="category-header__subtitle" data-i18n="cat.music.sub">Producción audiovisual con IA</p>
+            <div class="category-header__line"><span class="category-header__ornament"></span></div>
+          </div>
+          <div class="projects-grid">
+                        <!-- PROYECTO 04 -->
+            <article class="project-card reveal">
+              <div class="project-card__video">
+                <div class="project-card__video-placeholder" data-video-id="AkvtkMkt62c" data-video-type="youtube">
+                  <img src="https://img.youtube.com/vi/AkvtkMkt62c/maxresdefault.jpg" alt="SONIDO POPULAR — Visuales Generativos" loading="lazy">
+                  <div class="play-btn">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <span class="project-card__number" data-i18n="p4.number">PROYECTO 04</span>
+                <h3 class="project-card__title" data-i18n="p4.title">SONIDO POPULAR — Visuales Generativos</h3>
+                <span class="project-card__label" data-i18n="label.brief">BRIEF:</span>
+                <p class="project-card__brief" data-i18n="p4.brief">Visuales generativos que bailan al ritmo de la música. Un viaje psicodélico y técnico donde el sonido esculpe la imagen en tiempo real mediante algoritmos de IA audioreactivos.</p>
+                <div class="project-card__actions">
+                  <button class="btn btn--ghost" onclick="openModal('modal-tech-4')" data-i18n="btn.tech">DETALLES TÉCNICOS</button>
+                  <button class="btn btn--gold" onclick="openModal('modal-costs-4')" data-i18n="btn.costs">COMPARATIVA Y COSTOS</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROYECTO 05 -->
+            <article class="project-card reveal">
+              <div class="project-card__video">
+                <div class="project-card__video-placeholder" data-video-id="OzXqE8cFIpY" data-video-type="youtube">
+                  <img src="https://img.youtube.com/vi/OzXqE8cFIpY/maxresdefault.jpg" alt="ALISSE — Beat Drop Baby" loading="lazy">
+                  <div class="play-btn">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <span class="project-card__number" data-i18n="p5.number">PROYECTO 05</span>
+                <h3 class="project-card__title" data-i18n="p5.title">ALISSE — Beat Drop Baby</h3>
+                <span class="project-card__label" data-i18n="label.brief">BRIEF:</span>
+                <p class="project-card__brief" data-i18n="p5.brief">Producción musical audioreactiva con estética retrofuturista de neón. Fusión de mundos sintéticos con performance fluida de personajes para elevar el lanzamiento visual de tracks electrónicos contemporáneos.</p>
+                <div class="project-card__actions">
+                  <button class="btn btn--ghost" onclick="openModal('modal-tech-5')" data-i18n="btn.tech">DETALLES TÉCNICOS</button>
+                  <button class="btn btn--gold" onclick="openModal('modal-costs-5')" data-i18n="btn.costs">COMPARATIVA Y COSTOS</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROYECTO 06 -->
+            <article class="project-card reveal">
+              <div class="project-card__video">
+                <div class="project-card__video-placeholder" data-video-id="KNNg62xbSn0" data-video-type="youtube">
+                  <img src="https://img.youtube.com/vi/KNNg62xbSn0/maxresdefault.jpg" alt="LAS FLAMINGO — Performance Retro 60's" loading="lazy">
+                  <div class="play-btn">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <span class="project-card__number" data-i18n="p6.number">PROYECTO 06</span>
+                <h3 class="project-card__title" data-i18n="p6.title">LAS FLAMINGO — Performance Retro 60's</h3>
+                <span class="project-card__label" data-i18n="label.brief">BRIEF:</span>
+                <p class="project-card__brief" data-i18n="p6.brief">Performance musical vibrante que captura la esencia nostálgica de una banda femenina de los años 60. Consistencia estilística impecable, coreografía fluida y diseño de vestuario retro generado con IA de alta fidelidad.</p>
+                <div class="project-card__actions">
+                  <button class="btn btn--ghost" onclick="openModal('modal-tech-6')" data-i18n="btn.tech">DETALLES TÉCNICOS</button>
+                  <button class="btn btn--gold" onclick="openModal('modal-costs-6')" data-i18n="btn.costs">COMPARATIVA Y COSTOS</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROYECTO 07 -->
+            <article class="project-card reveal">
+              <div class="project-card__video">
+                <div class="project-card__video-placeholder" data-video-id="1suZftpGccw" data-video-type="youtube">
+                  <img src="https://img.youtube.com/vi/1suZftpGccw/maxresdefault.jpg" alt="ICE F**KING ICE — Narrativa Urbana" loading="lazy">
+                  <div class="play-btn">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <span class="project-card__number" data-i18n="p7.number">PROYECTO 07</span>
+                <h3 class="project-card__title" data-i18n="p7.title">ICE F**KING ICE — Narrativa Urbana</h3>
+                <span class="project-card__label" data-i18n="label.brief">BRIEF:</span>
+                <p class="project-card__brief" data-i18n="p7.brief">Clip de narrativa social poderosa que combina efectos visuales estilo documental con sincronización musical dinámica. Estética urbana callejera y protesta subcultural con generación de IA de alto impacto.</p>
+                <div class="project-card__actions">
+                  <button class="btn btn--ghost" onclick="openModal('modal-tech-7')" data-i18n="btn.tech">DETALLES TÉCNICOS</button>
+                  <button class="btn btn--gold" onclick="openModal('modal-costs-7')" data-i18n="btn.costs">COMPARATIVA Y COSTOS</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CATEGORY 03: INFLUENCERS DIGITALES -->
+      <section class="category-section" id="cat-influencers">
+        <div class="container">
+          <div class="category-header reveal">
+            <span class="category-header__number">03</span>
+            <h2 class="category-header__title" data-i18n="cat.influencers">INFLUENCERS DIGITALES</h2>
+            <p class="category-header__subtitle" data-i18n="cat.influencers.sub">Avatares virtuales y contenido de marca</p>
+            <div class="category-header__line"><span class="category-header__ornament"></span></div>
+          </div>
+          <div class="projects-grid">
+                        <!-- PROYECTO 08 -->
+            <article class="project-card reveal">
+              <div class="project-card__video">
+                <div class="project-card__video-placeholder" data-video-id="3K5XHw7VKy4" data-video-type="youtube">
+                  <img src="https://img.youtube.com/vi/3K5XHw7VKy4/maxresdefault.jpg" alt="Avatar Digital para Marcas de Ropa" loading="lazy">
+                  <div class="play-btn">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <span class="project-card__number" data-i18n="p8.number">PROYECTO 08</span>
+                <h3 class="project-card__title" data-i18n="p8.title">Avatar Digital para Marcas de Ropa</h3>
+                <span class="project-card__label" data-i18n="label.brief">BRIEF:</span>
+                <p class="project-card__brief" data-i18n="p8.brief">Creamos avatares digitales que personifican la marca y promocionan productos con realismo total, eliminando las barreras de logística, contratación de modelos y sesiones fotográficas tradicionales.</p>
+                <div class="project-card__actions">
+                  <button class="btn btn--ghost" onclick="openModal('modal-tech-8')" data-i18n="btn.tech">DETALLES TÉCNICOS</button>
+                  <button class="btn btn--gold" onclick="openModal('modal-costs-8')" data-i18n="btn.costs">COMPARATIVA Y COSTOS</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROYECTO 09 -->
+            <article class="project-card reveal">
+              <div class="project-card__video">
+                <div class="project-card__video-placeholder" data-video-id="rf9yyUN7In0" data-video-type="youtube">
+                  <img src="https://img.youtube.com/vi/rf9yyUN7In0/maxresdefault.jpg" alt="Influencer Digital para Reseñas de Productos" loading="lazy">
+                  <div class="play-btn">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <span class="project-card__number" data-i18n="p9.number">PROYECTO 09</span>
+                <h3 class="project-card__title" data-i18n="p9.title">Influencer Digital para Reseñas de Productos</h3>
+                <span class="project-card__label" data-i18n="label.brief">BRIEF:</span>
+                <p class="project-card__brief" data-i18n="p9.brief">Activo corporativo de alto impacto con avatares virtuales personalizados. Expresiones dinámicas matizadas y diseño digital limpio para comunicación de marca fluida en plataformas de streaming.</p>
+                <div class="project-card__actions">
+                  <button class="btn btn--ghost" onclick="openModal('modal-tech-9')" data-i18n="btn.tech">DETALLES TÉCNICOS</button>
+                  <button class="btn btn--gold" onclick="openModal('modal-costs-9')" data-i18n="btn.costs">COMPARATIVA Y COSTOS</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROYECTO 10 -->
+            <article class="project-card reveal">
+              <div class="project-card__video">
+                <div class="project-card__video-placeholder" data-video-id="TEKt04AkQno" data-video-type="youtube">
+                  <img src="https://img.youtube.com/vi/TEKt04AkQno/maxresdefault.jpg" alt="Influencer Digital para Reseñas de Aplicaciones" loading="lazy">
+                  <div class="play-btn">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <span class="project-card__number" data-i18n="p10.number">PROYECTO 10</span>
+                <h3 class="project-card__title" data-i18n="p10.title">Influencer Digital para Reseñas de Aplicaciones</h3>
+                <span class="project-card__label" data-i18n="label.brief">BRIEF:</span>
+                <p class="project-card__brief" data-i18n="p10.brief">Concepto comercial de alto impacto para aplicaciones digitales. Tecnología avanzada de prueba virtual, transiciones rápidas de estilo y consistencia visual diseñada para conversión orgánica en redes sociales.</p>
+                <div class="project-card__actions">
+                  <button class="btn btn--ghost" onclick="openModal('modal-tech-10')" data-i18n="btn.tech">DETALLES TÉCNICOS</button>
+                  <button class="btn btn--gold" onclick="openModal('modal-costs-10')" data-i18n="btn.costs">COMPARATIVA Y COSTOS</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CATEGORY 04: ADS & PROMOS -->
+      <section class="category-section" id="cat-ads">
+        <div class="container">
+          <div class="category-header reveal">
+            <span class="category-header__number">04</span>
+            <h2 class="category-header__title" data-i18n="cat.ads">ADS & PROMOS</h2>
+            <p class="category-header__subtitle" data-i18n="cat.ads.sub">Campañas comerciales de alto impacto</p>
+            <div class="category-header__line"><span class="category-header__ornament"></span></div>
+          </div>
+          <div class="projects-grid">
+                        <!-- PROYECTO 11 -->
+            <article class="project-card reveal">
+              <div class="project-card__video">
+                <div class="project-card__video-placeholder" data-video-id="1P6fefKj33c" data-video-type="youtube">
+                  <img src="https://img.youtube.com/vi/1P6fefKj33c/maxresdefault.jpg" alt="SPINN RADIO — Contenido Viral Nativo" loading="lazy">
+                  <div class="play-btn">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <span class="project-card__number" data-i18n="p11.number">PROYECTO 11</span>
+                <h3 class="project-card__title" data-i18n="p11.title">SPINN RADIO — Contenido Viral Nativo</h3>
+                <span class="project-card__label" data-i18n="label.brief">BRIEF:</span>
+                <p class="project-card__brief" data-i18n="p11.brief">Contenido diseñado para la viralidad en formatos nativos verticales. Estética trendy y montaje rítmico que conecta con las audiencias digitales actuales en tiempo récord.</p>
+                <div class="project-card__actions">
+                  <button class="btn btn--ghost" onclick="openModal('modal-tech-11')" data-i18n="btn.tech">DETALLES TÉCNICOS</button>
+                  <button class="btn btn--gold" onclick="openModal('modal-costs-11')" data-i18n="btn.costs">COMPARATIVA Y COSTOS</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROYECTO 12 -->
+            <article class="project-card reveal">
+              <div class="project-card__video">
+                <div class="project-card__video-placeholder" data-video-id="r1ShxLevgUs" data-video-type="youtube">
+                  <img src="https://img.youtube.com/vi/r1ShxLevgUs/maxresdefault.jpg" alt="METRO PULSE — Branding Metropolitano" loading="lazy">
+                  <div class="play-btn">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <span class="project-card__number" data-i18n="p12.number">PROYECTO 12</span>
+                <h3 class="project-card__title" data-i18n="p12.title">METRO PULSE — Branding Metropolitano</h3>
+                <span class="project-card__label" data-i18n="label.brief">BRIEF:</span>
+                <p class="project-card__brief" data-i18n="p12.brief">Concepto de branding metropolitano que combina interacción fluida de personajes, texturización de transporte moderno e integración de interfaz de aplicación móvil para promociones de alto impacto.</p>
+                <div class="project-card__actions">
+                  <button class="btn btn--ghost" onclick="openModal('modal-tech-12')" data-i18n="btn.tech">DETALLES TÉCNICOS</button>
+                  <button class="btn btn--gold" onclick="openModal('modal-costs-12')" data-i18n="btn.costs">COMPARATIVA Y COSTOS</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROYECTO 13 -->
+            <article class="project-card reveal">
+              <div class="project-card__video">
+                <div class="project-card__video-placeholder" data-video-id="2nb_XtuAvZo" data-video-type="youtube">
+                  <img src="https://img.youtube.com/vi/2nb_XtuAvZo/maxresdefault.jpg" alt="PROMO ONU — Comunicación Institucional" loading="lazy">
+                  <div class="play-btn">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <span class="project-card__number" data-i18n="p13.number">PROYECTO 13</span>
+                <h3 class="project-card__title" data-i18n="p13.title">PROMO ONU — Comunicación Institucional</h3>
+                <span class="project-card__label" data-i18n="label.brief">BRIEF:</span>
+                <p class="project-card__brief" data-i18n="p13.brief">Mensajes de impacto social elevado mediante narrativa cinematográfica. Transformamos la comunicación institucional en una experiencia audiovisual poderosa que genera confianza.</p>
+                <div class="project-card__actions">
+                  <button class="btn btn--ghost" onclick="openModal('modal-tech-13')" data-i18n="btn.tech">DETALLES TÉCNICOS</button>
+                  <button class="btn btn--gold" onclick="openModal('modal-costs-13')" data-i18n="btn.costs">COMPARATIVA Y COSTOS</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROYECTO 14 -->
+            <article class="project-card reveal">
+              <div class="project-card__video">
+                <div class="project-card__video-placeholder" data-video-id="YdQOSBjJH3I" data-video-type="youtube">
+                  <img src="https://img.youtube.com/vi/YdQOSBjJH3I/maxresdefault.jpg" alt="CON EL CORAZÓN — Storytelling Emocional" loading="lazy">
+                  <div class="play-btn">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <span class="project-card__number" data-i18n="p14.number">PROYECTO 14</span>
+                <h3 class="project-card__title" data-i18n="p14.title">CON EL CORAZÓN — Storytelling Emocional</h3>
+                <span class="project-card__label" data-i18n="label.brief">BRIEF:</span>
+                <p class="project-card__brief" data-i18n="p14.brief">Humanizando la tecnología mediante la emoción. Una pieza cinemática que conecta con la esencia humana utilizando herramientas de IA para potenciar la narrativa orgánica.</p>
+                <div class="project-card__actions">
+                  <button class="btn btn--ghost" onclick="openModal('modal-tech-14')" data-i18n="btn.tech">DETALLES TÉCNICOS</button>
+                  <button class="btn btn--gold" onclick="openModal('modal-costs-14')" data-i18n="btn.costs">COMPARATIVA Y COSTOS</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CATEGORY 05: KIDS CONTENT -->
+      <section class="category-section" id="cat-kids">
+        <div class="container">
+          <div class="category-header reveal">
+            <span class="category-header__number">05</span>
+            <h2 class="category-header__title" data-i18n="cat.kids">KIDS CONTENT</h2>
+            <p class="category-header__subtitle" data-i18n="cat.kids.sub">Animación y contenido infantil con IA</p>
+            <div class="category-header__line"><span class="category-header__ornament"></span></div>
+          </div>
+          <div class="projects-grid">
+                        <!-- PROYECTO 15 -->
+            <article class="project-card reveal">
+              <div class="project-card__video">
+                <div class="project-card__video-placeholder" data-video-id="R_NQv8kEuGE" data-video-type="youtube">
+                  <img src="https://img.youtube.com/vi/R_NQv8kEuGE/maxresdefault.jpg" alt="Peluches en Peligro — Narrativa Dramática" loading="lazy">
+                  <div class="play-btn">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <span class="project-card__number" data-i18n="p15.number">PROYECTO 15</span>
+                <h3 class="project-card__title" data-i18n="p15.title">Peluches en Peligro — Narrativa Dramática</h3>
+                <span class="project-card__label" data-i18n="label.brief">BRIEF:</span>
+                <p class="project-card__brief" data-i18n="p15.brief">Ejecución brillante de narrativa dramática con personajes de peluche. Manejo excepcional de texturas, renderizado complejo de humo e interacciones físicas realistas para un universo narrativo cautivador.</p>
+                <div class="project-card__actions">
+                  <button class="btn btn--ghost" onclick="openModal('modal-tech-15')" data-i18n="btn.tech">DETALLES TÉCNICOS</button>
+                  <button class="btn btn--gold" onclick="openModal('modal-costs-15')" data-i18n="btn.costs">COMPARATIVA Y COSTOS</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROYECTO 16 -->
+            <article class="project-card reveal">
+              <div class="project-card__video">
+                <div class="project-card__video-placeholder" data-video-id="7EKoa2x3-5Y" data-video-type="youtube">
+                  <img src="https://img.youtube.com/vi/7EKoa2x3-5Y/maxresdefault.jpg" alt="Animación en Plastilina — Diseño de Personajes" loading="lazy">
+                  <div class="play-btn">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <span class="project-card__number" data-i18n="p16.number">PROYECTO 16</span>
+                <h3 class="project-card__title" data-i18n="p16.title">Animación en Plastilina — Diseño de Personajes</h3>
+                <span class="project-card__label" data-i18n="label.brief">BRIEF:</span>
+                <p class="project-card__brief" data-i18n="p16.brief">Proyecto de animación en plastilina con alta fidelidad. Modelado físico avanzado, actuación expresiva de personajes, paleta interior rica y secuencias de comedia física dinámica.</p>
+                <div class="project-card__actions">
+                  <button class="btn btn--ghost" onclick="openModal('modal-tech-16')" data-i18n="btn.tech">DETALLES TÉCNICOS</button>
+                  <button class="btn btn--gold" onclick="openModal('modal-costs-16')" data-i18n="btn.costs">COMPARATIVA Y COSTOS</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROYECTO 17 -->
+            <article class="project-card reveal">
+              <div class="project-card__video">
+                <div class="project-card__video-placeholder" data-video-id="_Re9T1PWgB8" data-video-type="youtube">
+                  <img src="https://img.youtube.com/vi/_Re9T1PWgB8/maxresdefault.jpg" alt="Funky Bear — Showcase Visual Costero" loading="lazy">
+                  <div class="play-btn">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <span class="project-card__number" data-i18n="p17.number">PROYECTO 17</span>
+                <h3 class="project-card__title" data-i18n="p17.title">Funky Bear — Showcase Visual Costero</h3>
+                <span class="project-card__label" data-i18n="label.brief">BRIEF:</span>
+                <p class="project-card__brief" data-i18n="p17.brief">Viaje costero bañado de sol con performance dinámica de personajes y estilización ambiental consistente. Perfecto para plataformas de alto engagement y contenido orgánico loopable.</p>
+                <div class="project-card__actions">
+                  <button class="btn btn--ghost" onclick="openModal('modal-tech-17')" data-i18n="btn.tech">DETALLES TÉCNICOS</button>
+                  <button class="btn btn--gold" onclick="openModal('modal-costs-17')" data-i18n="btn.costs">COMPARATIVA Y COSTOS</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+    </section>
+
+    <!-- ========== SERVICES BANNER ========== -->
+    <section class="services-banner" id="services">
+      <div class="container">
+        <div class="services-banner__header reveal">
+          <span class="services-banner__eyebrow" data-i18n="services.eyebrow">TAMBIÉN OFRECEMOS</span>
+          <h2 class="services-banner__title" data-i18n="services.title">SERVICIOS PROFESIONALES</h2>
+        </div>
+        <div class="services-banner__grid reveal">
+          <!-- Tutoría -->
+          <div class="services-banner__item">
+            <div class="services-banner__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="services-banner__item-title" data-i18n="svc.tutoring.title">Tutoría Personalizada</h3>
+              <p class="services-banner__item-desc" data-i18n="svc.tutoring.desc">Formación práctica en herramientas de IA generativa para creadores y editores de video.</p>
+            </div>
+          </div>
+          <!-- Implementación -->
+          <div class="services-banner__item">
+            <div class="services-banner__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"/>
+                <rect x="9" y="9" width="6" height="6"/>
+                <line x1="9" y1="1" x2="9" y2="4"/>
+                <line x1="15" y1="1" x2="15" y2="4"/>
+                <line x1="9" y1="20" x2="9" y2="23"/>
+                <line x1="15" y1="20" x2="15" y2="23"/>
+                <line x1="20" y1="9" x2="23" y2="9"/>
+                <line x1="20" y1="15" x2="23" y2="15"/>
+                <line x1="1" y1="9" x2="4" y2="9"/>
+                <line x1="1" y1="15" x2="4" y2="15"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="services-banner__item-title" data-i18n="svc.implementation.title">Implementación de IA</h3>
+              <p class="services-banner__item-desc" data-i18n="svc.implementation.desc">Integración de flujos de trabajo eficientes con IA en tu estructura de producción actual.</p>
+            </div>
+          </div>
+          <!-- Consultoría -->
+          <div class="services-banner__item">
+            <div class="services-banner__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A5 5 0 0 0 8 8c0 1 .3 2.5 1 3.5l1.5 2.5"/>
+                <line x1="9" y1="18" x2="15" y2="18"/>
+                <line x1="10" y1="22" x2="14" y2="22"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="services-banner__item-title" data-i18n="svc.consulting.title">Consultoría Creativa</h3>
+              <p class="services-banner__item-desc" data-i18n="svc.consulting.desc">Estrategia, dirección de arte e ingeniería de prompts personalizada para tus proyectos.</p>
+            </div>
+          </div>
+          <!-- Desarrollo de Apps -->
+          <div class="services-banner__item">
+            <div class="services-banner__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                <line x1="12" y1="18" x2="12.01" y2="18"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="services-banner__item-title" data-i18n="svc.apps.title">Desarrollo de Apps</h3>
+              <p class="services-banner__item-desc" data-i18n="svc.apps.desc">Desarrollo a medida de aplicaciones móviles y web con integración directa de APIs de IA.</p>
+            </div>
+          </div>
+          <!-- Landing Pages -->
+          <div class="services-banner__item">
+            <div class="services-banner__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="services-banner__item-title" data-i18n="svc.landing.title">Landing Pages</h3>
+              <p class="services-banner__item-desc" data-i18n="svc.landing.desc">Creación y diseño de páginas de aterrizaje de alto rendimiento, optimizadas para conversión comercial.</p>
+            </div>
+          </div>
+          <!-- Automatizaciones -->
+          <div class="services-banner__item">
+            <div class="services-banner__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="9" cy="9" r="5"/>
+                <circle cx="17" cy="15" r="3"/>
+                <line x1="9" y1="14" x2="9" y2="23"/>
+                <line x1="17" y1="18" x2="17" y2="23"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="services-banner__item-title" data-i18n="svc.automation.title">Automatizaciones</h3>
+              <p class="services-banner__item-desc" data-i18n="svc.automation.desc">Diseño de automatizaciones y conectores inteligentes para acelerar tu producción de contenido.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -351,105 +698,73 @@
 
   <!-- ==================== FOOTER ==================== -->
   <footer class="footer" id="footer">
-    <div class="footer__inner">
-      <div class="footer__top">
-        <div>
-          <img src="assets/logo-transparent.png" alt="Axis Studio" class="footer__logo">
-          <p class="footer__tagline" style="margin-top: 12px;">Creatividad con equilibrio.<br>Contacto en Oaxaca.</p>
+    <div class="footer__container container">
+      <div class="footer__brand">
+        <a href="#" class="footer__logo">
+          <img src="assets/logo-transparent.png" alt="Axis Studio" class="footer__logo-img">
+          <div class="footer__logo-text">
+            <span class="footer__logo-name">AXIS</span>
+            <span class="footer__logo-tagline">STUDIO</span>
+          </div>
+        </a>
+        <p class="footer__tagline" data-i18n-html="footer.tagline">Donde la Creatividad Encuentra su Eje</p>
+      </div>
+      
+      <div class="footer__contacts">
+        <div class="footer__contact-item">
+          <span class="footer__contact-label" data-i18n="footer.email.label">Email</span>
+          <a href="mailto:axisstudioiamex@gmail.com" class="footer__contact-value">axisstudioiamex@gmail.com</a>
         </div>
-        <div class="footer__contact">
-          <a href="mailto:axisstudioiamex@gmail.com" class="footer__contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-              <polyline points="22,6 12,13 2,6"></polyline>
-            </svg>
-            axisstudioiamex@gmail.com
-          </a>
-          <a href="https://wa.me/529513775879" target="_blank" rel="noopener noreferrer" class="footer__contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path>
-            </svg>
-            +52 951 377 5879
-          </a>
+        <div class="footer__contact-item">
+          <span class="footer__contact-label" data-i18n="footer.whatsapp.label">WhatsApp</span>
+          <a href="https://wa.me/529513775879" target="_blank" rel="noopener noreferrer" class="footer__contact-value">+52 (951) 377 5879</a>
         </div>
       </div>
-
-      <div class="footer__socials" style="justify-content: center;">
-        <a href="https://www.instagram.com/axisstudioia" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Instagram" id="footer-ig">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-          </svg>
-        </a>
-        <a href="https://www.tiktok.com/@axistudioia" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="TikTok" id="footer-tiktok">
-          <svg viewBox="0 0 24 24" fill="currentColor">
-            <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V9.17a8.16 8.16 0 0 0 4.77 1.52V7.24a4.85 4.85 0 0 1-1.01-.55z"/>
-          </svg>
-        </a>
-          <a href="http://www.youtube.com/@Axisstudioia" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="YouTube">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.377.55a3.016 3.016 0 0 0-2.122 2.136C0 8.07 0 12 0 12s0 3.93.501 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.55 9.377.55 9.377.55s7.505 0 9.377-.55a3.016 3.016 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-            </svg>
-          </a>
-
-        <a href="mailto:axisstudioiamex@gmail.com" class="footer__social-link" aria-label="Email" id="footer-email">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-            <polyline points="22,6 12,13 2,6"></polyline>
-          </svg>
-        </a>
-      </div>
-
-      <div class="footer__divider"></div>
-
+      
       <div class="footer__bottom">
-        <p class="footer__copyright">© 2025 Axis Studio. Todos los derechos reservados.</p>
+        <p class="footer__copyright" data-i18n="footer.copyright">© 2026 Axis Studio. Todos los derechos reservados.</p>
+        <div class="footer__socials">
+          <a href="https://www.instagram.com/axisstudioia" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
+          <a href="https://www.tiktok.com/@axistudioia" target="_blank" rel="noopener noreferrer" aria-label="TikTok">TK</a>
+          <a href="http://www.youtube.com/@Axisstudioia" target="_blank" rel="noopener noreferrer" aria-label="YouTube">YT</a>
+        </div>
       </div>
     </div>
   </footer>
 
   <!-- ==================== MODALS ==================== -->
-  
-  <!-- MODALES PROYECTO 01: CHICO AVE -->
-  <div id="modal-tech-1" class="modal">
+    <div id="modal-tech-1" class="modal">
     <div class="modal__content">
       <button class="modal__close" onclick="closeModal('modal-tech-1')" aria-label="Cerrar modal">&times;</button>
       <div class="modal__header">
-        <h2 class="modal__title">DETALLES TÉCNICOS</h2>
+        <h2 class="modal__title" data-i18n="modal.tech.title">DETALLES TÉCNICOS</h2>
       </div>
       <div class="modal__body">
-        <p class="modal__text">
-          <span class="modal__highlight">17 horas de trabajo especializado</span> enfocado en la consistencia absoluta y narrativa de realismo mágico.
-        </p>
+        <p class="modal__text" data-i18n="p1.tech.intro">Este proyecto requirió 17 horas de trabajo especializado combinando dirección creativa tradicional con herramientas avanzadas de IA generativa para garantizar coherencia visual.</p>
         <div class="tech-list">
           <div class="tech-item">
             <div class="tech-content">
-              <span class="tech-item__title">1. Conceptualización y Storyboarding</span>
-              <span class="tech-item__desc">Diseño de narrativa clara y ángulos de cámara (POV, planos generales) para una visión estructurada.</span>
+              <span class="tech-item__title" data-i18n="p1.tech.step1.title">Conceptualización y Storyboarding</span>
+              <span class="tech-item__desc" data-i18n="p1.tech.step1.desc">Definición del tono de realismo mágico y diseño del viaje visual del personaje mediante prompts refinados.</span>
             </div>
-          </div>
-          <div class="tech-item">
+          </div>\n          <div class="tech-item">
             <div class="tech-content">
-              <span class="tech-item__title">2. Diseño de Personaje y "Digital Twin"</span>
-              <span class="tech-item__desc">Creación de un protagonista con consistencia absoluta (rostro, vestuario, accesorios) en cada toma.</span>
+              <span class="tech-item__title" data-i18n="p1.tech.step2.title">Diseño de Personaje y "Digital Twin"</span>
+              <span class="tech-item__desc" data-i18n="p1.tech.step2.desc">Creación del protagonista ("chico ave") manteniendo consistencia física en múltiples ángulos y tomas.</span>
             </div>
-          </div>
-          <div class="tech-item">
+          </div>\n          <div class="tech-item">
             <div class="tech-content">
-              <span class="tech-item__title">3. Continuidad de Entorno</span>
-              <span class="tech-item__desc">Curaduría de decenas de generaciones para mantener iluminación y atmósfera constante de Oaxaca.</span>
+              <span class="tech-item__title" data-i18n="p1.tech.step3.title">Continuidad de Entorno</span>
+              <span class="tech-item__desc" data-i18n="p1.tech.step3.desc">Generación de escenarios consistentes con iluminación volumétrica y textura cinematográfica.</span>
             </div>
-          </div>
-          <div class="tech-item">
+          </div>\n          <div class="tech-item">
             <div class="tech-content">
-              <span class="tech-item__title">4. Post-producción y Diseño Sonoro</span>
-              <span class="tech-item__desc">Audio inmersivo, Foley específico (viento, pasos) y corrección de color cinematográfica.</span>
+              <span class="tech-item__title" data-i18n="p1.tech.step4.title">Post-producción y Diseño Sonoro</span>
+              <span class="tech-item__desc" data-i18n="p1.tech.step4.desc">Montaje rítmico, corrección de color profesional y una banda sonora inmersiva que potencia la emoción.</span>
             </div>
           </div>
         </div>
-
-        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20me%20interesa%20un%20proyecto%20similar%20a%20Chico%20Ave" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;">COTIZAR PROYECTO SIMILAR</a>
+        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20me%20interesa%20un%20proyecto%20similar%20a%20CHICO%20AVE%20—%20Storytelling%20Cinematográfico" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;" data-i18n="btn.quote">COTIZAR PROYECTO SIMILAR</a>
       </div>
     </div>
   </div>
@@ -458,186 +773,158 @@
     <div class="modal__content">
       <button class="modal__close" onclick="closeModal('modal-costs-1')" aria-label="Cerrar modal">&times;</button>
       <div class="modal__header">
-        <h2 class="modal__title">COMPARATIVA Y COSTOS</h2>
+        <h2 class="modal__title" data-i18n="modal.costs.title">COMPARATIVA Y COSTOS</h2>
       </div>
       <div class="modal__body">
-        <p class="modal__text">
-          Eliminamos la fricción logística y el riesgo operativo, transformando el gasto en <span class="modal__highlight">inversión estratégica</span>.
-        </p>
         <table class="comparison-table">
           <thead>
             <tr>
-              <th>Característica</th>
+              <th>Aspecto</th>
               <th>Tradicional</th>
-              <th>Axis Studio</th>
+              <th class="highlight-axis">Axis Studio</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Talento</td>
-              <td>Casting físico (Limitado)</td>
-              <td class="highlight-axis">Digital Twins (Exclusivos)</td>
-            </tr>
-            <tr>
+              <td>Logística y Crew</td>
+              <td>15-20 personas en set</td>
+              <td class="highlight-axis">1 Director + Herramientas de IA</td>
+            </tr>\n            <tr>
               <td>Entorno</td>
-              <td>Rodaje en sitio (Clima)</td>
-              <td class="highlight-axis">Control Total AI</td>
-            </tr>
-            <tr>
+              <td>Construcción física / Renta</td>
+              <td class="highlight-axis">Generación 100% digital a medida</td>
+            </tr>\n            <tr>
               <td>Entrega</td>
-              <td>Semanas / Meses</td>
-              <td class="highlight-axis">Días</td>
-            </tr>
-            <tr>
-              <td>Costos</td>
-              <td>100% Gasto</td>
-              <td class="highlight-axis">70% de Reducción</td>
-            </tr>
-            <tr>
+              <td>Semanas de rodaje y VFX</td>
+              <td class="highlight-axis">Días de procesamiento ágil</td>
+            </tr>\n            <tr>
               <td>Derechos</td>
-              <td>Pagos Anuales</td>
-              <td class="highlight-axis">Propiedad Perpetua</td>
-            </tr>
-            <tr>
-              <td>Contenido</td>
-              <td>Pieza Única</td>
-              <td class="highlight-axis">Sagas Evolutivas</td>
+              <td>Limitados por contratos</td>
+              <td class="highlight-axis">Propiedad de activos a perpetuidad</td>
             </tr>
           </tbody>
         </table>
         <div class="modal__stat">
-          <span class="modal__stat-value">70%</span>
-          <span class="modal__stat-label">menos en costos logísticos</span>
+          <span class="modal__stat-value" data-i18n="p1.costs.stat.value">70%</span>
+          <span class="modal__stat-label" data-i18n="p1.costs.stat.label">Reducción en costos de locación y diseño de producción físicos.</span>
         </div>
-        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20quiero%20solicitar%20una%20cotización" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;">SOLICITAR COTIZACIÓN</a>
+        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20quiero%20solicitar%20una%20cotización" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;" data-i18n="btn.request">SOLICITAR COTIZACIÓN</a>
       </div>
     </div>
   </div>
 
-  <!-- MODALES PROYECTO 02: SONIDO POPULAR -->
   <div id="modal-tech-2" class="modal">
     <div class="modal__content">
       <button class="modal__close" onclick="closeModal('modal-tech-2')" aria-label="Cerrar modal">&times;</button>
       <div class="modal__header">
-        <h2 class="modal__title">DETALLES TÉCNICOS</h2>
+        <h2 class="modal__title" data-i18n="modal.tech.title">DETALLES TÉCNICOS</h2>
       </div>
       <div class="modal__body">
-        <p class="modal__text">
-          <span class="modal__highlight">Arquitectura Audioreactiva</span> donde cada frecuencia de audio afecta parámetros visuales en tiempo real.
-        </p>
+        <p class="modal__text" data-i18n="p2.tech.intro">Desarrollo de un entorno histórico detallado mediante modelado de IA y simulación de efectos volumétricos para recrear la atmósfera de la Ucrania soviética de 1986.</p>
         <div class="tech-list">
           <div class="tech-item">
             <div class="tech-content">
-              <span class="tech-item__title">1. Análisis de Espectro y BPM</span>
-              <span class="tech-item__desc">Extracción de datos rítmicos para sincronizar la generación de imágenes con la música.</span>
+              <span class="tech-item__title" data-i18n="p2.tech.step1.title">Investigación Histórica y Set Design</span>
+              <span class="tech-item__desc" data-i18n="p2.tech.step1.desc">Curaduría de referencias visuales de la central de Chernóbil y recreación de arquitectura industrial de la época.</span>
             </div>
-          </div>
-          <div class="tech-item">
+          </div>\n          <div class="tech-item">
             <div class="tech-content">
-              <span class="tech-item__title">2. Diseño de Prompt Generativo</span>
-              <span class="tech-item__desc">Creación de mundos psicodélicos que evolucionan fluidamente sin cortes de cámara.</span>
+              <span class="tech-item__title" data-i18n="p2.tech.step2.title">Simulaciones de Fluidos y Humo</span>
+              <span class="tech-item__desc" data-i18n="p2.tech.step2.desc">Fusión de efectos de humo denso y partículas radioactivas generadas mediante algoritmos visuales avanzados.</span>
             </div>
-          </div>
-          <div class="tech-item">
+          </div>\n          <div class="tech-item">
             <div class="tech-content">
-              <span class="tech-item__title">3. Interpolación de Movimiento AI</span>
-              <span class="tech-item__desc">Garantizamos una transición suave entre cuadros para un efecto 'morphing' cinematográfico.</span>
+              <span class="tech-item__title" data-i18n="p2.tech.step3.title">Lógica Multi-Actor</span>
+              <span class="tech-item__desc" data-i18n="p2.tech.step3.desc">Dirección visual y consistencia de múltiples personajes dentro de la misma escena y secuencia temporal.</span>
             </div>
-          </div>
-          <div class="tech-item">
+          </div>\n          <div class="tech-item">
             <div class="tech-content">
-              <span class="tech-item__title">4. Color Grade Dinámico</span>
-              <span class="tech-item__desc">Corrección de color que pulsa al ritmo del bajo para una experiencia inmersiva.</span>
+              <span class="tech-item__title" data-i18n="p2.tech.step4.title">Atmósfera y Color Grading</span>
+              <span class="tech-item__desc" data-i18n="p2.tech.step4.desc">Etalonaje de color en tonos fríos y desaturados característicos del cine de drama histórico setentero/ochentero.</span>
             </div>
           </div>
         </div>
-
-        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20me%20interesa%20un%20proyecto%20similar%20a%20Sonido%20Popular" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;">COTIZAR PROYECTO SIMILAR</a>
+        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20me%20interesa%20un%20proyecto%20similar%20a%20CHERNÓBIL%201986%20—%20Viaje%20en%20el%20Tiempo" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;" data-i18n="btn.quote">COTIZAR PROYECTO SIMILAR</a>
       </div>
     </div>
   </div>
 
-  <!-- MODAL COSTOS 2 -->
   <div id="modal-costs-2" class="modal">
     <div class="modal__content">
       <button class="modal__close" onclick="closeModal('modal-costs-2')" aria-label="Cerrar modal">&times;</button>
       <div class="modal__header">
-        <h2 class="modal__title">COMPARATIVA Y COSTOS</h2>
+        <h2 class="modal__title" data-i18n="modal.costs.title">COMPARATIVA Y COSTOS</h2>
       </div>
       <div class="modal__body">
         <table class="comparison-table">
           <thead>
             <tr>
-              <th>Factor</th>
+              <th>Aspecto</th>
               <th>Tradicional</th>
-              <th>Axis Studio</th>
+              <th class="highlight-axis">Axis Studio</th>
             </tr>
           </thead>
           <tbody>
             <tr>
+              <td>Construcción de Sets</td>
+              <td>Costosa maqueta o set real</td>
+              <td class="highlight-axis">Entornos 3D reconstruidos por IA</td>
+            </tr>\n            <tr>
+              <td>Atmósfera Volumétrica</td>
+              <td>Efectos prácticos costosos</td>
+              <td class="highlight-axis">Simulación digital de humo y gas</td>
+            </tr>\n            <tr>
               <td>Escenografía</td>
-              <td>Set Físico (Caro)</td>
-              <td class="highlight-axis">Entornos Infinitos IA</td>
-            </tr>
-            <tr>
-              <td>Sincronía</td>
-              <td>Edición Manual</td>
-              <td class="highlight-axis">Automatizado por Audio</td>
-            </tr>
-            <tr>
-              <td>Estética</td>
-              <td>Limitado por reality</td>
-              <td class="highlight-axis">Psicodelia Controlada</td>
-            </tr>
-            <tr>
-              <td>Costo</td>
-              <td>Logística pesada</td>
-              <td class="highlight-axis">80% Ahorro Directo</td>
+              <td>Mobiliario vintage real</td>
+              <td class="highlight-axis">Assets de utilería generados digitalmente</td>
+            </tr>\n            <tr>
+              <td>Tiempo de rodaje</td>
+              <td>Semanas en locación</td>
+              <td class="highlight-axis">Procesamiento en días de estudio</td>
             </tr>
           </tbody>
         </table>
         <div class="modal__stat">
-          <span class="modal__stat-value">80%</span>
-          <span class="modal__stat-label">ahorro en locaciones físicas</span>
+          <span class="modal__stat-value" data-i18n="p2.costs.stat.value">85%</span>
+          <span class="modal__stat-label" data-i18n="p2.costs.stat.label">Ahorro en construcción de sets físicos y renta de locaciones industriales reales.</span>
         </div>
-        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20quiero%20solicitar%20una%20cotización" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;">SOLICITAR COTIZACIÓN</a>
+        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20quiero%20solicitar%20una%20cotización" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;" data-i18n="btn.request">SOLICITAR COTIZACIÓN</a>
       </div>
     </div>
   </div>
 
-  <!-- MODALES PROYECTO 03: AXIS UGC CLOTHING -->
   <div id="modal-tech-3" class="modal">
     <div class="modal__content">
       <button class="modal__close" onclick="closeModal('modal-tech-3')" aria-label="Cerrar modal">&times;</button>
       <div class="modal__header">
-        <h2 class="modal__title">DETALLES TÉCNICOS</h2>
+        <h2 class="modal__title" data-i18n="modal.tech.title">DETALLES TÉCNICOS</h2>
       </div>
       <div class="modal__body">
-        <p class="modal__text">
-          <span class="modal__highlight">Ingeniería Visual</span> para el desarrollo de avatares digitales y simulación de materiales.
-        </p>
+        <p class="modal__text" data-i18n="p3.tech.intro">Estudio exhaustivo del diseño de interiores, tipografías y texturas de empaques comerciales británicos de 1975 para lograr una inmersión completa.</p>
         <div class="tech-list">
           <div class="tech-item">
             <div class="tech-content">
-              <span class="tech-item__title">1. Estrategia de Avatar digital</span>
-              <span class="tech-item__desc">Diseñamos activos digitales permanentes que son propiedad exclusiva de la marca. Este avatar no tiene conflictos de agenda y mantiene una imagen impecable y consistente en cada campaña.</span>
+              <span class="tech-item__title" data-i18n="p3.tech.step1.title">Diseño de Utilería y Objetos 70s</span>
+              <span class="tech-item__desc" data-i18n="p3.tech.step1.desc">Generación consistente de productos comerciales, cajas registradoras y empaques con textura vintage.</span>
             </div>
-          </div>
-          <div class="tech-item">
+          </div>\n          <div class="tech-item">
             <div class="tech-content">
-              <span class="tech-item__title">2. Fidelidad de Producto (Material Simulation)</span>
-              <span class="tech-item__desc">A través de un proceso de curaduría avanzado, logramos que los materiales y texturas de la ropa (tejidos, bordados y caídas) se comporten de manera natural ante la luz y el movimiento.</span>
+              <span class="tech-item__title" data-i18n="p3.tech.step2.title">Consistencia de Personaje</span>
+              <span class="tech-item__desc" data-i18n="p3.tech.step2.desc">Control detallado de rasgos y vestuario de época en planos cerrados y de seguimiento.</span>
             </div>
-          </div>
-          <div class="tech-item">
+          </div>\n          <div class="tech-item">
             <div class="tech-content">
-              <span class="tech-item__title">3. Performance y Sincronización</span>
-              <span class="tech-item__desc">Integramos locución humana con una sincronización labial y gestual de alta precisión, asegurando que el mensaje comercial se entregue con la calidez y el "punch" necesario para generar ventas.</span>
+              <span class="tech-item__title" data-i18n="p3.tech.step3.title">Iluminación y Textura Analógica</span>
+              <span class="tech-item__desc" data-i18n="p3.tech.step3.desc">Simulación de grano de película de 35mm e iluminación cálida de interiores comerciales vintage.</span>
+            </div>
+          </div>\n          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title" data-i18n="p3.tech.step4.title">Edición de Ritmo Lento</span>
+              <span class="tech-item__desc" data-i18n="p3.tech.step4.desc">Estructuración de montaje pausado diseñado para sostener el suspense del drama.</span>
             </div>
           </div>
         </div>
-
-        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20me%20interesa%20un%20proyecto%20similar%20a%20Axis%20UGC%20Clothing" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;">COTIZAR PROYECTO SIMILAR</a>
+        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20me%20interesa%20un%20proyecto%20similar%20a%20RETRO%20BRITÁNICO%2070%27s%20—%20Narrativa%20de%20Época" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;" data-i18n="btn.quote">COTIZAR PROYECTO SIMILAR</a>
       </div>
     </div>
   </div>
@@ -646,91 +933,78 @@
     <div class="modal__content">
       <button class="modal__close" onclick="closeModal('modal-costs-3')" aria-label="Cerrar modal">&times;</button>
       <div class="modal__header">
-        <h2 class="modal__title">COMPARATIVA Y COSTOS</h2>
+        <h2 class="modal__title" data-i18n="modal.costs.title">COMPARATIVA Y COSTOS</h2>
       </div>
       <div class="modal__body">
-        <p class="modal__text">
-          Transformamos el gasto operativo en un flujo continuo de comunicación.
-        </p>
         <table class="comparison-table">
           <thead>
             <tr>
-              <th>Característica</th>
-              <th>Producción Tradicional</th>
-              <th>Modelo Axis Studio</th>
+              <th>Aspecto</th>
+              <th>Tradicional</th>
+              <th class="highlight-axis">Axis Studio</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Logística y Crew</td>
-              <td>70% del presupuesto en traslados, estudio y equipo.</td>
-              <td class="highlight-axis">0% Riesgo Operativo. Inversión centrada 100% en el resultado visual.</td>
-            </tr>
-            <tr>
-              <td>Modelos y Derechos</td>
-              <td>Pagos recurrentes y renovaciones de imagen.</td>
-              <td class="highlight-axis">Propiedad Perpetua. El activo digital es patrimonio de la empresa.</td>
-            </tr>
-            <tr>
-              <td>Escalabilidad</td>
-              <td>Una sola pieza por cada sesión de rodaje.</td>
-              <td class="highlight-axis">Saga Narrativa. Posibilidad de crear múltiples piezas con el mismo avatar.</td>
-            </tr>
-            <tr>
-              <td>Agilidad</td>
-              <td>Semanas de planeación y post-producción.</td>
-              <td class="highlight-axis">Respuesta Instantánea. Piezas listas para reaccionar a tendencias en días.</td>
+              <td>Diseño de Arte</td>
+              <td>Meses buscando utilería real</td>
+              <td class="highlight-axis">Generación ágil por prompt e IA</td>
+            </tr>\n            <tr>
+              <td>Casting y Vestuario</td>
+              <td>Actores con vestuario histórico</td>
+              <td class="highlight-axis">Modelos virtuales con styling 70s</td>
+            </tr>\n            <tr>
+              <td>Locación</td>
+              <td>Renta de local vintage comercial</td>
+              <td class="highlight-axis">Estudio digital con iluminación cálida</td>
+            </tr>\n            <tr>
+              <td>Cámara y Filtros</td>
+              <td>Cámaras de cine y revelado</td>
+              <td class="highlight-axis">Filtros digitales de grano y lente analógico</td>
             </tr>
           </tbody>
         </table>
         <div class="modal__stat">
-          <span class="modal__stat-value">100%</span>
-          <span class="modal__stat-label">propiedad sobre los activos digitales</span>
+          <span class="modal__stat-value" data-i18n="p3.costs.stat.value">75%</span>
+          <span class="modal__stat-label" data-i18n="p3.costs.stat.label">Ahorro en utilería vintage genuina y diseño de arte de época.</span>
         </div>
-        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20quiero%20solicitar%20una%20cotización" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;">SOLICITAR COTIZACIÓN</a>
+        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20quiero%20solicitar%20una%20cotización" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;" data-i18n="btn.request">SOLICITAR COTIZACIÓN</a>
       </div>
     </div>
   </div>
 
-  <!-- MODALES PROYECTO 04: SPINN RADIO -->
   <div id="modal-tech-4" class="modal">
     <div class="modal__content">
       <button class="modal__close" onclick="closeModal('modal-tech-4')" aria-label="Cerrar modal">&times;</button>
       <div class="modal__header">
-        <h2 class="modal__title">DETALLES TÉCNICOS</h2>
+        <h2 class="modal__title" data-i18n="modal.tech.title">DETALLES TÉCNICOS</h2>
       </div>
       <div class="modal__body">
-        <p class="modal__text">
-          <span class="modal__highlight">Formato Nativo 9:16</span> optimizado para algoritmos de retención (TikTok/Reels).
-        </p>
+        <p class="modal__text" data-i18n="p4.tech.intro">Arquitectura reactiva que extrae datos de frecuencias sonoras de la pista para modular dinámicamente los parámetros de generación visual de la IA.</p>
         <div class="tech-list">
           <div class="tech-item">
             <div class="tech-content">
-              <span class="tech-item__title">1. Análisis de Retención (Hooks)</span>
-              <span class="tech-item__desc">Diseño de los primeros 3 segundos para garantizar engagement máximo.</span>
+              <span class="tech-item__title" data-i18n="p4.tech.step1.title">Análisis de Espectro y BPM</span>
+              <span class="tech-item__desc" data-i18n="p4.tech.step1.desc">Extracción de frecuencias de graves, medios y agudos para mapearlos a variables de movimiento e intensidad.</span>
             </div>
-          </div>
-          <div class="tech-item">
+          </div>\n          <div class="tech-item">
             <div class="tech-content">
-              <span class="tech-item__title">2. Generación Ágil de Assets</span>
-              <span class="tech-item__desc">Uso de IA para crear fondos y efectos 'trendy' de forma ultra-rápida.</span>
+              <span class="tech-item__title" data-i18n="p4.tech.step2.title">Diseño de Prompt Generativo</span>
+              <span class="tech-item__desc" data-i18n="p4.tech.step2.desc">Creación de fórmulas estéticas y paletas de color psicodélicas optimizadas para mutación continua.</span>
             </div>
-          </div>
-          <div class="tech-item">
+          </div>\n          <div class="tech-item">
             <div class="tech-content">
-              <span class="tech-item__title">3. Edición Dinámica y Subtítulos</span>
-              <span class="tech-item__desc">Montaje rítmico con tipografías de alto contraste para visualización sin audio.</span>
+              <span class="tech-item__title" data-i18n="p4.tech.step3.title">Interpolación de Movimiento AI</span>
+              <span class="tech-item__desc" data-i18n="p4.tech.step3.desc">Generación de transiciones de cuadros fluidas y sincronizadas al tempo (BPM) de la canción.</span>
             </div>
-          </div>
-          <div class="tech-item">
+          </div>\n          <div class="tech-item">
             <div class="tech-content">
-              <span class="tech-item__title">4. Optimización de Peso</span>
-              <span class="tech-item__desc">Renderizado balanceado para carga instantánea en redes móviles.</span>
+              <span class="tech-item__title" data-i18n="p4.tech.step4.title">Color Grade Dinámico</span>
+              <span class="tech-item__desc" data-i18n="p4.tech.step4.desc">Ajustes automáticos de contraste y saturación vinculados a la energía de la música.</span>
             </div>
           </div>
         </div>
-
-        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20me%20interesa%20un%20proyecto%20similar%20a%20Spinn%20Radio" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;">COTIZAR PROYECTO SIMILAR</a>
+        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20me%20interesa%20un%20proyecto%20similar%20a%20SONIDO%20POPULAR%20—%20Visuales%20Generativos" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;" data-i18n="btn.quote">COTIZAR PROYECTO SIMILAR</a>
       </div>
     </div>
   </div>
@@ -739,82 +1013,78 @@
     <div class="modal__content">
       <button class="modal__close" onclick="closeModal('modal-costs-4')" aria-label="Cerrar modal">&times;</button>
       <div class="modal__header">
-        <h2 class="modal__title">COMPARATIVA Y COSTOS</h2>
+        <h2 class="modal__title" data-i18n="modal.costs.title">COMPARATIVA Y COSTOS</h2>
       </div>
       <div class="modal__body">
         <table class="comparison-table">
           <thead>
             <tr>
-              <th>Valor</th>
-              <th>Producción TV</th>
-              <th>Axis Studio</th>
+              <th>Aspecto</th>
+              <th>Tradicional</th>
+              <th class="highlight-axis">Axis Studio</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Agilidad</td>
-              <td>Semanas (Planificación)</td>
-              <td class="highlight-axis">Horas (Reacción Viral)</td>
-            </tr>
-            <tr>
-              <td>Formato</td>
-              <td>Adaptado (Crop)</td>
-              <td class="highlight-axis">Nativo 9:16 Original</td>
-            </tr>
-            <tr>
-              <td>Inversión</td>
-              <td>Costosa/Puntual</td>
-              <td class="highlight-axis">Económica/Frecuente</td>
+              <td>Renderizado 3D</td>
+              <td>Servidores dedicados por semanas</td>
+              <td class="highlight-axis">Cálculo algorítmico veloz en horas</td>
+            </tr>\n            <tr>
+              <td>Sincronización</td>
+              <td>Edición manual nota por nota</td>
+              <td class="highlight-axis">Mapeo automático de frecuencias por IA</td>
+            </tr>\n            <tr>
+              <td>Equipo Técnico</td>
+              <td>Animadores y diseñadores VFX</td>
+              <td class="highlight-axis">1 Operador de IA Reactiva</td>
+            </tr>\n            <tr>
+              <td>Flexibilidad</td>
+              <td>Cambios requieren volver a renderizar</td>
+              <td class="highlight-axis">Ajuste de prompt instantáneo</td>
             </tr>
           </tbody>
         </table>
         <div class="modal__stat">
-          <span class="modal__stat-value">60%</span>
-          <span class="modal__stat-label">más de engagement orgánico</span>
+          <span class="modal__stat-value" data-i18n="p4.costs.stat.value">80%</span>
+          <span class="modal__stat-label" data-i18n="p4.costs.stat.label">Reducción en tiempo de post-producción y renders pesados 3D tradicionales.</span>
         </div>
-        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20quiero%20solicitar%20una%20cotización" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;">SOLICITAR COTIZACIÓN</a>
+        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20quiero%20solicitar%20una%20cotización" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;" data-i18n="btn.request">SOLICITAR COTIZACIÓN</a>
       </div>
     </div>
   </div>
 
-  <!-- MODALES PROYECTO 05: PROMO ONU -->
   <div id="modal-tech-5" class="modal">
     <div class="modal__content">
       <button class="modal__close" onclick="closeModal('modal-tech-5')" aria-label="Cerrar modal">&times;</button>
       <div class="modal__header">
-        <h2 class="modal__title">DETALLES TÉCNICOS</h2>
+        <h2 class="modal__title" data-i18n="modal.tech.title">DETALLES TÉCNICOS</h2>
       </div>
       <div class="modal__body">
-        <p class="modal__text">
-          <span class="modal__highlight">Comunicación Estratégica</span> con estética cinematográfica para mensajes de alto valor social.
-        </p>
+        <p class="modal__text" data-i18n="p5.tech.intro">Integración de animaciones de personajes sincronizadas con una cuadrícula tridimensional luminiscente impulsada por señales de audio.</p>
         <div class="tech-list">
           <div class="tech-item">
             <div class="tech-content">
-              <span class="tech-item__title">1. Curaduría de Guion Institucional</span>
-              <span class="tech-item__desc">Adaptación de mensajes complejos a una narrativa visual clara y empática.</span>
+              <span class="tech-item__title" data-i18n="p5.tech.step1.title">Worldbuilding Retrofuturista</span>
+              <span class="tech-item__desc" data-i18n="p5.tech.step1.desc">Diseño de entornos de rejilla de neón y arquitectura sintética vibrante de alta fidelidad.</span>
             </div>
-          </div>
-          <div class="tech-item">
+          </div>\n          <div class="tech-item">
             <div class="tech-content">
-              <span class="tech-item__title">2. Estética 'Clean & Premium'</span>
-              <span class="tech-item__desc">Uso de paletas de color sobrias y composiciones equilibradas que inspiran confianza.</span>
+              <span class="tech-item__title" data-i18n="p5.tech.step2.title">Análisis de Frecuencias del Beat</span>
+              <span class="tech-item__desc" data-i18n="p5.tech.step2.desc">Mapeo de la percusión para controlar los destellos y la deformación geométrica del entorno.</span>
             </div>
-          </div>
-          <div class="tech-item">
+          </div>\n          <div class="tech-item">
             <div class="tech-content">
-              <span class="tech-item__title">3. Post-producción de Impacto</span>
-              <span class="tech-item__desc">Integración de motion graphics elegantes para resaltar datos clave y estadísticas.</span>
+              <span class="tech-item__title" data-i18n="p5.tech.step3.title">Performance de Personaje Fluido</span>
+              <span class="tech-item__desc" data-i18n="p5.tech.step3.desc">Renderizado de baile sincronizado con consistencia en texturas reflectivas bajo luces de neón.</span>
             </div>
-          </div>
-          <div class="tech-item">
+          </div>\n          <div class="tech-item">
             <div class="tech-content">
-              <span class="tech-item__title">4. Masterización de Audio Vocal</span>
-              <span class="tech-item__desc">Tratamiento de locución para una claridad absoluta y autoridad institucional.</span>
+              <span class="tech-item__title" data-i18n="p5.tech.step4.title">Renderizado Híbrido Realtime</span>
+              <span class="tech-item__desc" data-i18n="p5.tech.step4.desc">Combinación de motores de render en tiempo real con optimización de IA para tomas de alta velocidad.</span>
             </div>
           </div>
         </div>
-        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20me%20interesa%20un%20proyecto%20similar%20a%20Promo%20ONU" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;">COTIZAR PROYECTO SIMILAR</a>
+        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20me%20interesa%20un%20proyecto%20similar%20a%20ALISSE%20—%20Beat%20Drop%20Baby" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;" data-i18n="btn.quote">COTIZAR PROYECTO SIMILAR</a>
       </div>
     </div>
   </div>
@@ -823,7 +1093,7 @@
     <div class="modal__content">
       <button class="modal__close" onclick="closeModal('modal-costs-5')" aria-label="Cerrar modal">&times;</button>
       <div class="modal__header">
-        <h2 class="modal__title">COMPARATIVA Y COSTOS</h2>
+        <h2 class="modal__title" data-i18n="modal.costs.title">COMPARATIVA Y COSTOS</h2>
       </div>
       <div class="modal__body">
         <table class="comparison-table">
@@ -831,74 +1101,70 @@
             <tr>
               <th>Aspecto</th>
               <th>Tradicional</th>
-              <th>Axis Studio</th>
+              <th class="highlight-axis">Axis Studio</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Logística</td>
-              <td>Despliegue de equipo</td>
-              <td class="highlight-axis">Eficiencia Digital</td>
-            </tr>
-            <tr>
-              <td>Estética</td>
-              <td>Video Corporativo Plano</td>
-              <td class="highlight-axis">Cinematografía Institucional</td>
-            </tr>
-            <tr>
-              <td>Ahorro</td>
-              <td>0%</td>
-              <td class="highlight-axis">70% de reducción</td>
+              <td>Efectos de Neón y VFX</td>
+              <td>Software de simulación complejo</td>
+              <td class="highlight-axis">Generación directa con física de luz AI</td>
+            </tr>\n            <tr>
+              <td>Estudio y Pantallas</td>
+              <td>Renta de estudio LED virtual</td>
+              <td class="highlight-axis">Entorno sintético renderizado en nube</td>
+            </tr>\n            <tr>
+              <td>Crew de Iluminación</td>
+              <td>Rigs de luces de colores costosos</td>
+              <td class="highlight-axis">Iluminación volumétrica virtual</td>
+            </tr>\n            <tr>
+              <td>Post-producción</td>
+              <td>Edición y compresión pesada</td>
+              <td class="highlight-axis">Optimización automática nativa</td>
             </tr>
           </tbody>
         </table>
         <div class="modal__stat">
-          <span class="modal__stat-value">70%</span>
-          <span class="modal__stat-label">reducción en despliegue logístico</span>
+          <span class="modal__stat-value" data-i18n="p5.costs.stat.value">90%</span>
+          <span class="modal__stat-label" data-i18n="p5.costs.stat.label">Ahorro frente a producciones con pantallas LED gigantes (virtual production) o post-producción VFX.</span>
         </div>
-        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20quiero%20solicitar%20una%20cotización" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;">SOLICITAR COTIZACIÓN</a>
+        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20quiero%20solicitar%20una%20cotización" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;" data-i18n="btn.request">SOLICITAR COTIZACIÓN</a>
       </div>
     </div>
   </div>
 
-  <!-- MODALES PROYECTO 06: CON EL CORAZÓN -->
   <div id="modal-tech-6" class="modal">
     <div class="modal__content">
       <button class="modal__close" onclick="closeModal('modal-tech-6')" aria-label="Cerrar modal">&times;</button>
       <div class="modal__header">
-        <h2 class="modal__title">DETALLES TÉCNICOS</h2>
+        <h2 class="modal__title" data-i18n="modal.tech.title">DETALLES TÉCNICOS</h2>
       </div>
       <div class="modal__body">
-        <p class="modal__text">
-          <span class="modal__highlight">Humanización Digital</span> combinando storytelling clásico con potencia visual de IA generativa.
-        </p>
+        <p class="modal__text" data-i18n="p6.tech.intro">Uso de flujos de control de poses y vestuario histórico para recrear la estética de la televisión de los sesentas con fidelidad moderna.</p>
         <div class="tech-list">
           <div class="tech-item">
             <div class="tech-content">
-              <span class="tech-item__title">1. Diseño de Narrativa Emocional</span>
-              <span class="tech-item__desc">Construcción de guion basada en sentimientos universales para conexión profunda.</span>
+              <span class="tech-item__title" data-i18n="p6.tech.step1.title">Estilización de Época Sesentera</span>
+              <span class="tech-item__desc" data-i18n="p6.tech.step1.desc">Modelado estético basado en grabaciones clásicas, peinados altos y maquillaje de la época.</span>
             </div>
-          </div>
-          <div class="tech-item">
+          </div>\n          <div class="tech-item">
             <div class="tech-content">
-              <span class="tech-item__title">2. Creación de 'Digital Twins' Empáticos</span>
-              <span class="tech-item__desc">Generación de personajes con expresiones realistas que transmiten emociones genuinas.</span>
+              <span class="tech-item__title" data-i18n="p6.tech.step2.title">Control de Coreografía Híbrido</span>
+              <span class="tech-item__desc" data-i18n="p6.tech.step2.desc">Mapeo de poses humanas para mantener la sincronización y el ritmo de baile en el ensamble.</span>
             </div>
-          </div>
-          <div class="tech-item">
+          </div>\n          <div class="tech-item">
             <div class="tech-content">
-              <span class="tech-item__title">3. Iluminación Orgánica AI</span>
-              <span class="tech-item__desc">Simulación de luz cinematográfica natural para eliminar la sensación 'plástica' del 3D.</span>
+              <span class="tech-item__title" data-i18n="p6.tech.step3.title">Fidelidad de Telas y Vestuario</span>
+              <span class="tech-item__desc" data-i18n="p6.tech.step3.desc">Simulación física de brillo y movimiento de telas retro bajo reflectores de estudio.</span>
             </div>
-          </div>
-          <div class="tech-item">
+          </div>\n          <div class="tech-item">
             <div class="tech-content">
-              <span class="tech-item__title">4. Diseño Sonoro del Corazón</span>
-              <span class="tech-item__desc">Música original y foley orgánico diseñado para conmover y cautivar.</span>
+              <span class="tech-item__title" data-i18n="p6.tech.step4.title">Emulación de Lente Analógico</span>
+              <span class="tech-item__desc" data-i18n="p6.tech.step4.desc">Ajuste de destellos cromáticos y profundidad de campo típicos de las cámaras de televisión antiguas.</span>
             </div>
           </div>
         </div>
-        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20me%20interesa%20un%20proyecto%20similar%20a%20Con%20el%20Corazón" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;">COTIZAR PROYECTO SIMILAR</a>
+        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20me%20interesa%20un%20proyecto%20similar%20a%20LAS%20FLAMINGO%20—%20Performance%20Retro%2060%27s" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;" data-i18n="btn.quote">COTIZAR PROYECTO SIMILAR</a>
       </div>
     </div>
   </div>
@@ -907,40 +1173,887 @@
     <div class="modal__content">
       <button class="modal__close" onclick="closeModal('modal-costs-6')" aria-label="Cerrar modal">&times;</button>
       <div class="modal__header">
-        <h2 class="modal__title">COMPARATIVA Y COSTOS</h2>
+        <h2 class="modal__title" data-i18n="modal.costs.title">COMPARATIVA Y COSTOS</h2>
       </div>
       <div class="modal__body">
         <table class="comparison-table">
           <thead>
             <tr>
-              <th>Factor</th>
-              <th>Actores Físicos</th>
-              <th>Axis Studio Digital Twins</th>
+              <th>Aspecto</th>
+              <th>Tradicional</th>
+              <th class="highlight-axis">Axis Studio</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Disponibilidad</td>
-              <td>Sujeto a agenda/clima</td>
-              <td class="highlight-axis">24/7 Sin límites</td>
-            </tr>
-            <tr>
-              <td>Propiedad</td>
-              <td>Derechos temporales</td>
-              <td class="highlight-axis">Propiedad Perpetua</td>
-            </tr>
-            <tr>
-              <td>Costo</td>
-              <td>Renovaciones constantes</td>
-              <td class="highlight-axis">Inversión única en activo</td>
+              <td>Casting</td>
+              <td>Múltiples actrices/bailarinas</td>
+              <td class="highlight-axis">Avatares de performance digital</td>
+            </tr>\n            <tr>
+              <td>Diseño de Moda</td>
+              <td>Compra, renta o costura a mano</td>
+              <td class="highlight-axis">Vestuario virtual generado por prompt</td>
+            </tr>\n            <tr>
+              <td>Maquillaje y Peinado</td>
+              <td>Estilistas profesionales por horas</td>
+              <td class="highlight-axis">Look 100% renderizado por IA</td>
+            </tr>\n            <tr>
+              <td>Cámara y Set</td>
+              <td>Renta de cámaras de tubo antiguas</td>
+              <td class="highlight-axis">Emulación de lentes retro vía software</td>
             </tr>
           </tbody>
         </table>
         <div class="modal__stat">
-          <span class="modal__stat-value">100%</span>
-          <span class="modal__stat-label">propiedad exclusiva de activos digitales</span>
+          <span class="modal__stat-value" data-i18n="p6.costs.stat.value">70%</span>
+          <span class="modal__stat-label" data-i18n="p6.costs.stat.label">Ahorro en diseño, renta y confección de vestuario de época, así como casting de talentos.</span>
         </div>
-        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20quiero%20solicitar%20una%20cotización" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;">SOLICITAR COTIZACIÓN</a>
+        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20quiero%20solicitar%20una%20cotización" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;" data-i18n="btn.request">SOLICITAR COTIZACIÓN</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-tech-7" class="modal">
+    <div class="modal__content">
+      <button class="modal__close" onclick="closeModal('modal-tech-7')" aria-label="Cerrar modal">&times;</button>
+      <div class="modal__header">
+        <h2 class="modal__title" data-i18n="modal.tech.title">DETALLES TÉCNICOS</h2>
+      </div>
+      <div class="modal__body">
+        <p class="modal__text" data-i18n="p7.tech.intro">Proceso de generación visual ágil estructurado para tomas en exteriores urbanos con estilo de cámara en mano y texturizado grunge.</p>
+        <div class="tech-list">
+          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title" data-i18n="p7.tech.step1.title">Dirección de Arte de Estilo Callejero</span>
+              <span class="tech-item__desc" data-i18n="p7.tech.step1.desc">Desarrollo de una paleta urbana fría con grafitis, texturas de concreto y vestuario streetwear de alta definición.</span>
+            </div>
+          </div>\n          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title" data-i18n="p7.tech.step2.title">Simulación de Movimiento de Cámara</span>
+              <span class="tech-item__desc" data-i18n="p7.tech.step2.desc">Inyección de micro-vibraciones y barridos de lente para emular tomas reales de camarógrafo.</span>
+            </div>
+          </div>\n          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title" data-i18n="p7.tech.step3.title">VFX de Realismo Sucio</span>
+              <span class="tech-item__desc" data-i18n="p7.tech.step3.desc">Fusión de grano analógico y destellos de luz para potenciar el carácter de documental social.</span>
+            </div>
+          </div>\n          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title" data-i18n="p7.tech.step4.title">Montaje Rítmico Dinámico</span>
+              <span class="tech-item__desc" data-i18n="p7.tech.step4.desc">Sincronización milimétrica de cortes de escena al ritmo del bajo y caja de la batería.</span>
+            </div>
+          </div>
+        </div>
+        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20me%20interesa%20un%20proyecto%20similar%20a%20ICE%20F**KING%20ICE%20—%20Narrativa%20Urbana" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;" data-i18n="btn.quote">COTIZAR PROYECTO SIMILAR</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-costs-7" class="modal">
+    <div class="modal__content">
+      <button class="modal__close" onclick="closeModal('modal-costs-7')" aria-label="Cerrar modal">&times;</button>
+      <div class="modal__header">
+        <h2 class="modal__title" data-i18n="modal.costs.title">COMPARATIVA Y COSTOS</h2>
+      </div>
+      <div class="modal__body">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Aspecto</th>
+              <th>Tradicional</th>
+              <th class="highlight-axis">Axis Studio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Permisos de Rodaje</td>
+              <td>Trámites municipales burocráticos</td>
+              <td class="highlight-axis">Generación de exteriores digitales libres</td>
+            </tr>\n            <tr>
+              <td>Crew en Locación</td>
+              <td>Viáticos, seguridad y transporte</td>
+              <td class="highlight-axis">Operación centralizada en estudio</td>
+            </tr>\n            <tr>
+              <td>Clima y Luz</td>
+              <td>Dependencia del sol y lluvia</td>
+              <td class="highlight-axis">Control lumínico total digital</td>
+            </tr>\n            <tr>
+              <td>VFX e Integración</td>
+              <td>Corrección de grafitis física</td>
+              <td class="highlight-axis">Inyección directa de arte urbano por IA</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="modal__stat">
+          <span class="modal__stat-value" data-i18n="p7.costs.stat.value">65%</span>
+          <span class="modal__stat-label" data-i18n="p7.costs.stat.label">Ahorro al evitar permisos de filmación municipal en calles públicas y renta de equipo móvil de crew.</span>
+        </div>
+        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20quiero%20solicitar%20una%20cotización" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;" data-i18n="btn.request">SOLICITAR COTIZACIÓN</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-tech-8" class="modal">
+    <div class="modal__content">
+      <button class="modal__close" onclick="closeModal('modal-tech-8')" aria-label="Cerrar modal">&times;</button>
+      <div class="modal__header">
+        <h2 class="modal__title" data-i18n="modal.tech.title">DETALLES TÉCNICOS</h2>
+      </div>
+      <div class="modal__body">
+        <p class="modal__text" data-i18n="p8.tech.intro">Ingeniería de tejidos digitalizada y transferencia de movimiento para exhibición dinámica de colecciones de moda sin muestras físicas.</p>
+        <div class="tech-list">
+          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title" data-i18n="p8.tech.step1.title">Estrategia de Avatar de Marca</span>
+              <span class="tech-item__desc" data-i18n="p8.tech.step1.desc">Modelado y refinamiento de rasgos del modelo digital de acuerdo a la identidad de la marca.</span>
+            </div>
+          </div>\n          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title" data-i18n="p8.tech.step2.title">Fidelidad de Producto (Tejidos)</span>
+              <span class="tech-item__desc" data-i18n="p8.tech.step2.desc">Simulación física de la textura, caída y comportamiento de las telas bajo diferentes condiciones de luz.</span>
+            </div>
+          </div>\n          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title" data-i18n="p8.tech.step3.title">Performance y Movimiento</span>
+              <span class="tech-item__desc" data-i18n="p8.tech.step3.desc">Integración de movimientos fluidos de pasarela y poses comerciales de alta naturalidad.</span>
+            </div>
+          </div>
+        </div>
+        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20me%20interesa%20un%20proyecto%20similar%20a%20Avatar%20Digital%20para%20Marcas%20de%20Ropa" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;" data-i18n="btn.quote">COTIZAR PROYECTO SIMILAR</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-costs-8" class="modal">
+    <div class="modal__content">
+      <button class="modal__close" onclick="closeModal('modal-costs-8')" aria-label="Cerrar modal">&times;</button>
+      <div class="modal__header">
+        <h2 class="modal__title" data-i18n="modal.costs.title">COMPARATIVA Y COSTOS</h2>
+      </div>
+      <div class="modal__body">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Aspecto</th>
+              <th>Tradicional</th>
+              <th class="highlight-axis">Axis Studio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Modelos</td>
+              <td>Honorarios, viáticos, derechos</td>
+              <td class="highlight-axis">Inversión inicial única del avatar</td>
+            </tr>\n            <tr>
+              <td>Sesiones de Fotos</td>
+              <td>Estudio, fotógrafo, equipo, luces</td>
+              <td class="highlight-axis">Generación virtual en alta resolución</td>
+            </tr>\n            <tr>
+              <td>Muestras Físicas</td>
+              <td>Costos de confección previos</td>
+              <td class="highlight-axis">Visualización de telas digitalizadas</td>
+            </tr>\n            <tr>
+              <td>Escalabilidad</td>
+              <td>Nueva locación requiere re-filmar</td>
+              <td class="highlight-axis">Cambio de fondo digital instantáneo</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="modal__stat">
+          <span class="modal__stat-value" data-i18n="p8.costs.stat.value">100%</span>
+          <span class="modal__stat-label" data-i18n="p8.costs.stat.label">Propiedad intelectual absoluta de los avatares para campañas infinitas sin costo de regalías.</span>
+        </div>
+        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20quiero%20solicitar%20una%20cotización" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;" data-i18n="btn.request">SOLICITAR COTIZACIÓN</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-tech-9" class="modal">
+    <div class="modal__content">
+      <button class="modal__close" onclick="closeModal('modal-tech-9')" aria-label="Cerrar modal">&times;</button>
+      <div class="modal__header">
+        <h2 class="modal__title" data-i18n="modal.tech.title">DETALLES TÉCNICOS</h2>
+      </div>
+      <div class="modal__body">
+        <p class="modal__text" data-i18n="p9.tech.intro">Generación de presentadores virtuales enfocados en análisis de producto con capacidades de gesticulación avanzada para generar empatía.</p>
+        <div class="tech-list">
+          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title" data-i18n="p9.tech.step1.title">Desarrollo de Rostro Expresivo</span>
+              <span class="tech-item__desc" data-i18n="p9.tech.step1.desc">Mapeo detallado de micro-expresiones, parpadeo e interactividad ocular del avatar.</span>
+            </div>
+          </div>\n          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title" data-i18n="p9.tech.step2.title">Sincronización de Labios por Voz</span>
+              <span class="tech-item__desc" data-i18n="p9.tech.step2.desc">Uso de redes neuronales para ajustar la posición labial y bucal en base a cualquier pista de voz (multilenguaje).</span>
+            </div>
+          </div>\n          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title" data-i18n="p9.tech.step3.title">Integración de Escenario y Producto</span>
+              <span class="tech-item__desc" data-i18n="p9.tech.step3.desc">Composición de capas del avatar interactuando de forma realista con el empaque del producto.</span>
+            </div>
+          </div>
+        </div>
+        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20me%20interesa%20un%20proyecto%20similar%20a%20Influencer%20Digital%20para%20Reseñas%20de%20Productos" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;" data-i18n="btn.quote">COTIZAR PROYECTO SIMILAR</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-costs-9" class="modal">
+    <div class="modal__content">
+      <button class="modal__close" onclick="closeModal('modal-costs-9')" aria-label="Cerrar modal">&times;</button>
+      <div class="modal__header">
+        <h2 class="modal__title" data-i18n="modal.costs.title">COMPARATIVA Y COSTOS</h2>
+      </div>
+      <div class="modal__body">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Aspecto</th>
+              <th>Tradicional</th>
+              <th class="highlight-axis">Axis Studio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Presentadores Reales</td>
+              <td>Contratos mensuales costosos</td>
+              <td class="highlight-axis">Avatar propiedad de la empresa</td>
+            </tr>\n            <tr>
+              <td>Estudio y Set</td>
+              <td>Renta y setup de cámaras/luces</td>
+              <td class="highlight-axis">Renders automatizados digitales</td>
+            </tr>\n            <tr>
+              <td>Locución e Idioma</td>
+              <td>Traductores y locutores extra</td>
+              <td class="highlight-axis">Soporte multilingüe inmediato por voz IA</td>
+            </tr>\n            <tr>
+              <td>Tiempo de Producción</td>
+              <td>Días de grabación y edición</td>
+              <td class="highlight-axis">Generación de contenido en horas</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="modal__stat">
+          <span class="modal__stat-value" data-i18n="p9.costs.stat.value">80%</span>
+          <span class="modal__stat-label" data-i18n="p9.costs.stat.label">Ahorro recurrente en honorarios de presentadores, locutores y horas de estudio de grabación.</span>
+        </div>
+        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20quiero%20solicitar%20una%20cotización" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;" data-i18n="btn.request">SOLICITAR COTIZACIÓN</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-tech-10" class="modal">
+    <div class="modal__content">
+      <button class="modal__close" onclick="closeModal('modal-tech-10')" aria-label="Cerrar modal">&times;</button>
+      <div class="modal__header">
+        <h2 class="modal__title" data-i18n="modal.tech.title">DETALLES TÉCNICOS</h2>
+      </div>
+      <div class="modal__body">
+        <p class="modal__text" data-i18n="p10.tech.intro">Producción de contenido dinámico para apps móviles integrando captura de pantalla de interfaz real con la performance de un embajador virtual.</p>
+        <div class="tech-list">
+          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title" data-i18n="p10.tech.step1.title">Embajador Virtual Social-First</span>
+              <span class="tech-item__desc" data-i18n="p10.tech.step1.desc">Diseño de un avatar carismático adaptado a formatos de consumo rápido para TikTok/Reels.</span>
+            </div>
+          </div>\n          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title" data-i18n="p10.tech.step2.title">Composición de Interfaz de App</span>
+              <span class="tech-item__desc" data-i18n="p10.tech.step2.desc">Fusión interactiva de tomas de pantalla del software flotando de forma integrada junto al personaje.</span>
+            </div>
+          </div>\n          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title" data-i18n="p10.tech.step3.title">Sincronía de Labios y Acting Natural</span>
+              <span class="tech-item__desc" data-i18n="p10.tech.step3.desc">Modulación de voz en off con los gestos faciales del modelo para simular una recomendación nativa.</span>
+            </div>
+          </div>
+        </div>
+        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20me%20interesa%20un%20proyecto%20similar%20a%20Influencer%20Digital%20para%20Reseñas%20de%20Aplicaciones" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;" data-i18n="btn.quote">COTIZAR PROYECTO SIMILAR</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-costs-10" class="modal">
+    <div class="modal__content">
+      <button class="modal__close" onclick="closeModal('modal-costs-10')" aria-label="Cerrar modal">&times;</button>
+      <div class="modal__header">
+        <h2 class="modal__title" data-i18n="modal.costs.title">COMPARATIVA Y COSTOS</h2>
+      </div>
+      <div class="modal__body">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Aspecto</th>
+              <th>Tradicional</th>
+              <th class="highlight-axis">Axis Studio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Creadores UGC</td>
+              <td>Pagos por video con derechos limitados</td>
+              <td class="highlight-axis">Contenido 100% corporativo ilimitado</td>
+            </tr>\n            <tr>
+              <td>Actualización de App</td>
+              <td>Nueva interfaz requiere volver a grabar</td>
+              <td class="highlight-axis">Reemplazo digital rápido de screenshots</td>
+            </tr>\n            <tr>
+              <td>Edición</td>
+              <td>Editores freelance externos</td>
+              <td class="highlight-axis">Templates automatizados de marca</td>
+            </tr>\n            <tr>
+              <td>Consistencia</td>
+              <td>El creador puede dejar la marca</td>
+              <td class="highlight-axis">El avatar es un activo fijo permanente</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="modal__stat">
+          <span class="modal__stat-value" data-i18n="p10.costs.stat.value">75%</span>
+          <span class="modal__stat-label" data-i18n="p10.costs.stat.label">Ahorro al evitar la contratación de creadores de contenido UGC externos y re-filmación por cambios de interfaz.</span>
+        </div>
+        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20quiero%20solicitar%20una%20cotización" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;" data-i18n="btn.request">SOLICITAR COTIZACIÓN</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-tech-11" class="modal">
+    <div class="modal__content">
+      <button class="modal__close" onclick="closeModal('modal-tech-11')" aria-label="Cerrar modal">&times;</button>
+      <div class="modal__header">
+        <h2 class="modal__title" data-i18n="modal.tech.title">DETALLES TÉCNICOS</h2>
+      </div>
+      <div class="modal__body">
+        <p class="modal__text" data-i18n="p11.tech.intro">Optimización de flujo para entrega ultra rápida de videos optimizados para algoritmos de retención (TikTok, Instagram Reels, YouTube Shorts).</p>
+        <div class="tech-list">
+          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title" data-i18n="p11.tech.step1.title">Análisis de Retención (Hooks)</span>
+              <span class="tech-item__desc" data-i18n="p11.tech.step1.desc">Diseño de los primeros 3 segundos con estímulos visuales fuertes para retener al espectador.</span>
+            </div>
+          </div>\n          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title" data-i18n="p11.tech.step2.title">Generación Ágil de Assets</span>
+              <span class="tech-item__desc" data-i18n="p11.tech.step2.desc">Procesamiento rápido de imágenes y secuencias estilizadas de acuerdo a tendencias musicales.</span>
+            </div>
+          </div>\n          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title" data-i18n="p11.tech.step3.title">Edición Dinámica y Subtítulos</span>
+              <span class="tech-item__desc" data-i18n="p11.tech.step3.desc">Subtítulos animados automáticos y efectos de sonido rápidos que sostienen el ritmo.</span>
+            </div>
+          </div>\n          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title" data-i18n="p11.tech.step4.title">Optimización de Compresión</span>
+              <span class="tech-item__desc" data-i18n="p11.tech.step4.desc">Exportación optimizada para garantizar la máxima nitidez posible dentro de la compresión de redes sociales.</span>
+            </div>
+          </div>
+        </div>
+        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20me%20interesa%20un%20proyecto%20similar%20a%20SPINN%20RADIO%20—%20Contenido%20Viral%20Nativo" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;" data-i18n="btn.quote">COTIZAR PROYECTO SIMILAR</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-costs-11" class="modal">
+    <div class="modal__content">
+      <button class="modal__close" onclick="closeModal('modal-costs-11')" aria-label="Cerrar modal">&times;</button>
+      <div class="modal__header">
+        <h2 class="modal__title" data-i18n="modal.costs.title">COMPARATIVA Y COSTOS</h2>
+      </div>
+      <div class="modal__body">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Aspecto</th>
+              <th>Tradicional</th>
+              <th class="highlight-axis">Axis Studio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Tiempo de Entrega</td>
+              <td>1 a 2 semanas por lote</td>
+              <td class="highlight-axis">24 a 48 horas en producción ágil</td>
+            </tr>\n            <tr>
+              <td>Equipo Humano</td>
+              <td>Diseñador, editor, redactor</td>
+              <td class="highlight-axis">1 Diseñador de contenido IA</td>
+            </tr>\n            <tr>
+              <td>Edición Gráfica</td>
+              <td>Animación manual de subtítulos</td>
+              <td class="highlight-axis">Automatización asistida por IA</td>
+            </tr>\n            <tr>
+              <td>Costo por Pieza</td>
+              <td>Alto costo unitario tradicional</td>
+              <td class="highlight-axis">Producción escalable económica</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="modal__stat">
+          <span class="modal__stat-value" data-i18n="p11.costs.stat.value">60%</span>
+          <span class="modal__stat-label" data-i18n="p11.costs.stat.label">Más engagement orgánico a una fracción del costo de agencias tradicionales de social media.</span>
+        </div>
+        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20quiero%20solicitar%20una%20cotización" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;" data-i18n="btn.request">SOLICITAR COTIZACIÓN</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-tech-12" class="modal">
+    <div class="modal__content">
+      <button class="modal__close" onclick="closeModal('modal-tech-12')" aria-label="Cerrar modal">&times;</button>
+      <div class="modal__header">
+        <h2 class="modal__title" data-i18n="modal.tech.title">DETALLES TÉCNICOS</h2>
+      </div>
+      <div class="modal__body">
+        <p class="modal__text" data-i18n="p12.tech.intro">Uso de flujos estables para combinar entornos urbanos realistas en movimiento con elementos gráficos digitales flotantes de branding corporativo.</p>
+        <div class="tech-list">
+          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title" data-i18n="p12.tech.step1.title">Modelado de Entorno Metropolitano</span>
+              <span class="tech-item__desc" data-i18n="p12.tech.step1.desc">Creación de interiores de trenes urbanos realistas con reflejos e iluminación natural de tránsito.</span>
+            </div>
+          </div>\n          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title" data-i18n="p12.tech.step2.title">Integración de Gráficos UI/UX</span>
+              <span class="tech-item__desc" data-i18n="p12.tech.step2.desc">Superposición de interfaces de aplicaciones móviles simulando uso interactivo en tiempo real.</span>
+            </div>
+          </div>\n          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title" data-i18n="p12.tech.step3.title">Consistencia Lumínica en Movimiento</span>
+              <span class="tech-item__desc" data-i18n="p12.tech.step3.desc">Ajuste de destellos y sombras en el personaje coherentes con el paso del tren por túneles y estaciones.</span>
+            </div>
+          </div>
+        </div>
+        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20me%20interesa%20un%20proyecto%20similar%20a%20METRO%20PULSE%20—%20Branding%20Metropolitano" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;" data-i18n="btn.quote">COTIZAR PROYECTO SIMILAR</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-costs-12" class="modal">
+    <div class="modal__content">
+      <button class="modal__close" onclick="closeModal('modal-costs-12')" aria-label="Cerrar modal">&times;</button>
+      <div class="modal__header">
+        <h2 class="modal__title" data-i18n="modal.costs.title">COMPARATIVA Y COSTOS</h2>
+      </div>
+      <div class="modal__body">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Aspecto</th>
+              <th>Tradicional</th>
+              <th class="highlight-axis">Axis Studio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Renta de Locación</td>
+              <td>Extremadamente alta en metro/trenes</td>
+              <td class="highlight-axis">Generación sintética gratuita</td>
+            </tr>\n            <tr>
+              <td>Seguridad de Rodaje</td>
+              <td>Crew de control y resguardo</td>
+              <td class="highlight-axis">Proceso en estudio virtual</td>
+            </tr>\n            <tr>
+              <td>Actores en Tránsito</td>
+              <td>Seguros de vida y viáticos extras</td>
+              <td class="highlight-axis">Digital twins sin riesgos físicos</td>
+            </tr>\n            <tr>
+              <td>Post-producción</td>
+              <td>Integración VFX manual de pantallas</td>
+              <td class="highlight-axis">Composición integrada nativa por IA</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="modal__stat">
+          <span class="modal__stat-value" data-i18n="p12.costs.stat.value">80%</span>
+          <span class="modal__stat-label" data-i18n="p12.costs.stat.label">Ahorro al evitar rentar vagones reales, permisos gubernamentales de tránsito y crew de iluminación móvil.</span>
+        </div>
+        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20quiero%20solicitar%20una%20cotización" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;" data-i18n="btn.request">SOLICITAR COTIZACIÓN</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-tech-13" class="modal">
+    <div class="modal__content">
+      <button class="modal__close" onclick="closeModal('modal-tech-13')" aria-label="Cerrar modal">&times;</button>
+      <div class="modal__header">
+        <h2 class="modal__title" data-i18n="modal.tech.title">DETALLES TÉCNICOS</h2>
+      </div>
+      <div class="modal__body">
+        <p class="modal__text" data-i18n="p13.tech.intro">Estética sobria y pulida combinando voceros virtuales serios con infografías y material de stock histórico generado con alta fidelidad.</p>
+        <div class="tech-list">
+          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title" data-i18n="p13.tech.step1.title">Curaduría de Guion Institucional</span>
+              <span class="tech-item__desc" data-i18n="p13.tech.step1.desc">Adaptación de datos crudos a una estructura de discurso empático y riguroso.</span>
+            </div>
+          </div>\n          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title" data-i18n="p13.tech.step2.title">Estética 'Clean & Premium'</span>
+              <span class="tech-item__desc" data-i18n="p13.tech.step2.desc">Composición de planos simétricos con paletas de color sobrias y corporativas.</span>
+            </div>
+          </div>\n          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title" data-i18n="p13.tech.step3.title">Post-producción de Impacto</span>
+              <span class="tech-item__desc" data-i18n="p13.tech.step3.desc">Integración sutil de elementos de texto cinemático y transiciones elegantes.</span>
+            </div>
+          </div>\n          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title" data-i18n="p13.tech.step4.title">Masterización de Audio Vocal</span>
+              <span class="tech-item__desc" data-i18n="p13.tech.step4.desc">Locución pulida con ecualización de alta claridad y música incidental corporativa.</span>
+            </div>
+          </div>
+        </div>
+        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20me%20interesa%20un%20proyecto%20similar%20a%20PROMO%20ONU%20—%20Comunicación%20Institucional" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;" data-i18n="btn.quote">COTIZAR PROYECTO SIMILAR</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-costs-13" class="modal">
+    <div class="modal__content">
+      <button class="modal__close" onclick="closeModal('modal-costs-13')" aria-label="Cerrar modal">&times;</button>
+      <div class="modal__header">
+        <h2 class="modal__title" data-i18n="modal.costs.title">COMPARATIVA Y COSTOS</h2>
+      </div>
+      <div class="modal__body">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Aspecto</th>
+              <th>Tradicional</th>
+              <th class="highlight-axis">Axis Studio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Locaciones de Oficina</td>
+              <td>Renta de salas ejecutivas/sets</td>
+              <td class="highlight-axis">Oficinas corporativas 3D virtuales</td>
+            </tr>\n            <tr>
+              <td>Crew Audiovisual</td>
+              <td>Cámaras, luces, asistentes</td>
+              <td class="highlight-axis">Operación ágil en oficina central</td>
+            </tr>\n            <tr>
+              <td>Viáticos y Viajes</td>
+              <td>Costos de traslado a locaciones</td>
+              <td class="highlight-axis">Producción 100% remota y digital</td>
+            </tr>\n            <tr>
+              <td>Tiempos de Aprobación</td>
+              <td>Cambios requieren volver a filmar</td>
+              <td class="highlight-axis">Re-generación ágil de escenas</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="modal__stat">
+          <span class="modal__stat-value" data-i18n="p13.costs.stat.value">70%</span>
+          <span class="modal__stat-label" data-i18n="p13.costs.stat.label">Reducción en viáticos, traslados de personal y costos de producción en locación.</span>
+        </div>
+        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20quiero%20solicitar%20una%20cotización" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;" data-i18n="btn.request">SOLICITAR COTIZACIÓN</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-tech-14" class="modal">
+    <div class="modal__content">
+      <button class="modal__close" onclick="closeModal('modal-tech-14')" aria-label="Cerrar modal">&times;</button>
+      <div class="modal__header">
+        <h2 class="modal__title" data-i18n="modal.tech.title">DETALLES TÉCNICOS</h2>
+      </div>
+      <div class="modal__body">
+        <p class="modal__text" data-i18n="p14.tech.intro">Uso de modelos de simulación emocional y micro-gestos en personajes digitales para transmitir empatía y calidez en tomas íntimas.</p>
+        <div class="tech-list">
+          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title" data-i18n="p14.tech.step1.title">Diseño de Narrativa Emocional</span>
+              <span class="tech-item__desc" data-i18n="p14.tech.step1.desc">Estructura de guion basada en arquetipos narrativos universales que mueven sentimientos.</span>
+            </div>
+          </div>\n          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title" data-i18n="p14.tech.step2.title">Digital Twins Empáticos</span>
+              <span class="tech-item__desc" data-i18n="p14.tech.step2.desc">Diseño de personajes con expresiones oculares y faciales naturales en primer plano.</span>
+            </div>
+          </div>\n          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title" data-i18n="p14.tech.step3.title">Iluminación Orgánica AI</span>
+              <span class="tech-item__desc" data-i18n="p14.tech.step3.desc">Simulación de luz de sol natural de atardecer para aportar calidez visual al encuadre.</span>
+            </div>
+          </div>\n          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title" data-i18n="p14.tech.step4.title">Diseño Sonoro del Corazón</span>
+              <span class="tech-item__desc" data-i18n="p14.tech.step4.desc">Fusión de latidos rítmicos grabados con arreglos de cuerdas acústicas de fondo.</span>
+            </div>
+          </div>
+        </div>
+        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20me%20interesa%20un%20proyecto%20similar%20a%20CON%20EL%20CORAZÓN%20—%20Storytelling%20Emocional" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;" data-i18n="btn.quote">COTIZAR PROYECTO SIMILAR</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-costs-14" class="modal">
+    <div class="modal__content">
+      <button class="modal__close" onclick="closeModal('modal-costs-14')" aria-label="Cerrar modal">&times;</button>
+      <div class="modal__header">
+        <h2 class="modal__title" data-i18n="modal.costs.title">COMPARATIVA Y COSTOS</h2>
+      </div>
+      <div class="modal__body">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Aspecto</th>
+              <th>Tradicional</th>
+              <th class="highlight-axis">Axis Studio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Derechos de Imagen</td>
+              <td>Contratos anuales con actores reales</td>
+              <td class="highlight-axis">Propiedad absoluta de avatares Axis</td>
+            </tr>\n            <tr>
+              <td>Casting Dramático</td>
+              <td>Horas buscando actores expresivos</td>
+              <td class="highlight-axis">Diseño facial empático optimizado</td>
+            </tr>\n            <tr>
+              <td>Estudio y Set</td>
+              <td>Renta de locación con luz cálida</td>
+              <td class="highlight-axis">Iluminación de atardecer digitalizada</td>
+            </tr>\n            <tr>
+              <td>Re-filmaciones</td>
+              <td>Costos por rehacer escenas con actor</td>
+              <td class="highlight-axis">Generación de tomas extra en minutos</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="modal__stat">
+          <span class="modal__stat-value" data-i18n="p14.costs.stat.value">100%</span>
+          <span class="modal__stat-label" data-i18n="p14.costs.stat.label">Propiedad total de los avatares para uso ilimitado en campañas futuras sin costo de regalías.</span>
+        </div>
+        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20quiero%20solicitar%20una%20cotización" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;" data-i18n="btn.request">SOLICITAR COTIZACIÓN</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-tech-15" class="modal">
+    <div class="modal__content">
+      <button class="modal__close" onclick="closeModal('modal-tech-15')" aria-label="Cerrar modal">&times;</button>
+      <div class="modal__header">
+        <h2 class="modal__title" data-i18n="modal.tech.title">DETALLES TÉCNICOS</h2>
+      </div>
+      <div class="modal__body">
+        <p class="modal__text" data-i18n="p15.tech.intro">Técnica de animación física híbrida emulando stop-motion clásica. Simulación avanzada de texturas de tela, lana e hilo bajo iluminación dramática.</p>
+        <div class="tech-list">
+          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title" data-i18n="p15.tech.step1.title">Fidelidad de Textura de Felpa</span>
+              <span class="tech-item__desc" data-i18n="p15.tech.step1.desc">Procesamiento de detalles microscópicos en peluches para simular materiales reales.</span>
+            </div>
+          </div>\n          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title" data-i18n="p15.tech.step2.title">Efectos Volumétricos de Humo</span>
+              <span class="tech-item__desc" data-i18n="p15.tech.step2.desc">Renderizado e integración de humo y niebla a escala que interactúa físicamente con los juguetes.</span>
+            </div>
+          </div>\n          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title" data-i18n="p15.tech.step3.title">Simulación Stop-Motion</span>
+              <span class="tech-item__desc" data-i18n="p15.tech.step3.desc">Limitación deliberada de cuadros por segundo (framerate) para imitar la estética del cine de animación cuadro por cuadro.</span>
+            </div>
+          </div>
+        </div>
+        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20me%20interesa%20un%20proyecto%20similar%20a%20Peluches%20en%20Peligro%20—%20Narrativa%20Dramática" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;" data-i18n="btn.quote">COTIZAR PROYECTO SIMILAR</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-costs-15" class="modal">
+    <div class="modal__content">
+      <button class="modal__close" onclick="closeModal('modal-costs-15')" aria-label="Cerrar modal">&times;</button>
+      <div class="modal__header">
+        <h2 class="modal__title" data-i18n="modal.costs.title">COMPARATIVA Y COSTOS</h2>
+      </div>
+      <div class="modal__body">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Aspecto</th>
+              <th>Tradicional</th>
+              <th class="highlight-axis">Axis Studio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Producción Stop-Motion</td>
+              <td>Meses de toma foto a foto en set</td>
+              <td class="highlight-axis">Renders de animación en horas</td>
+            </tr>\n            <tr>
+              <td>Escenografía Física</td>
+              <td>Maquetas de madera y arcilla</td>
+              <td class="highlight-axis">Sets infantiles digitales ricos</td>
+            </tr>\n            <tr>
+              <td>VFX Volumétricos</td>
+              <td>Máquinas de humo complejas en mini</td>
+              <td class="highlight-axis">Simulación digital de humo física</td>
+            </tr>\n            <tr>
+              <td>Edición</td>
+              <td>Fácil de corregir tomas erróneas</td>
+              <td class="highlight-axis">Generación instantánea de escenas</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="modal__stat">
+          <span class="modal__stat-value" data-i18n="p15.costs.stat.value">90%</span>
+          <span class="modal__stat-label" data-i18n="p15.costs.stat.label">Ahorro al evitar la fabricación de maquetas físicas, armaduras articuladas y meses de toma manual.</span>
+        </div>
+        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20quiero%20solicitar%20una%20cotización" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;" data-i18n="btn.request">SOLICITAR COTIZACIÓN</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-tech-16" class="modal">
+    <div class="modal__content">
+      <button class="modal__close" onclick="closeModal('modal-tech-16')" aria-label="Cerrar modal">&times;</button>
+      <div class="modal__header">
+        <h2 class="modal__title" data-i18n="modal.tech.title">DETALLES TÉCNICOS</h2>
+      </div>
+      <div class="modal__body">
+        <p class="modal__text" data-i18n="p16.tech.intro">Modelado tridimensional digital simulando deformación física orgánica y huellas dactilares sobre plastilina (claymation).</p>
+        <div class="tech-list">
+          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title" data-i18n="p16.tech.step1.title">Modelado Orgánico de Arcilla</span>
+              <span class="tech-item__desc" data-i18n="p16.tech.step1.desc">Inyección de imperfecciones y relieves sobre los modelos digitales para imitar el moldeado manual.</span>
+            </div>
+          </div>\n          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title" data-i18n="p16.tech.step2.title">Actuación Facial Excesiva</span>
+              <span class="tech-item__desc" data-i18n="p16.tech.step2.desc">Diseño de deformación elástica extrema en ojos y bocas para simular gesticulación caricaturesca.</span>
+            </div>
+          </div>\n          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title" data-i18n="p16.tech.step3.title">Diseño de Set en Plastilina</span>
+              <span class="tech-item__desc" data-i18n="p16.tech.step3.desc">Creación de fondos y utilería con aspecto maleable y colores saturados característicos de la arcilla.</span>
+            </div>
+          </div>
+        </div>
+        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20me%20interesa%20un%20proyecto%20similar%20a%20Animación%20en%20Plastilina%20—%20Diseño%20de%20Personajes" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;" data-i18n="btn.quote">COTIZAR PROYECTO SIMILAR</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-costs-16" class="modal">
+    <div class="modal__content">
+      <button class="modal__close" onclick="closeModal('modal-costs-16')" aria-label="Cerrar modal">&times;</button>
+      <div class="modal__header">
+        <h2 class="modal__title" data-i18n="modal.costs.title">COMPARATIVA Y COSTOS</h2>
+      </div>
+      <div class="modal__body">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Aspecto</th>
+              <th>Tradicional</th>
+              <th class="highlight-axis">Axis Studio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Moldeado de Juguetes</td>
+              <td>Kilos de plastilina real y moldes</td>
+              <td class="highlight-axis">Escultura digital por prompt/IA</td>
+            </tr>\n            <tr>
+              <td>Personal Técnico</td>
+              <td>Animadores manuales especializados</td>
+              <td class="highlight-axis">1 Diseñador de animación digital</td>
+            </tr>\n            <tr>
+              <td>Tiempos de Render</td>
+              <td>Semanas de captura cuadro por cuadro</td>
+              <td class="highlight-axis">Procesamiento digital de alta velocidad</td>
+            </tr>\n            <tr>
+              <td>Rigging</td>
+              <td>Esqueletos metálicos costosos</td>
+              <td class="highlight-axis">Rigging digital elástico libre</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="modal__stat">
+          <span class="modal__stat-value" data-i18n="p16.costs.stat.value">80%</span>
+          <span class="modal__stat-label" data-i18n="p16.costs.stat.label">Ahorro en laboriosos procesos manuales y reducción masiva en tiempos de post-producción.</span>
+        </div>
+        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20quiero%20solicitar%20una%20cotización" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;" data-i18n="btn.request">SOLICITAR COTIZACIÓN</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-tech-17" class="modal">
+    <div class="modal__content">
+      <button class="modal__close" onclick="closeModal('modal-tech-17')" aria-label="Cerrar modal">&times;</button>
+      <div class="modal__header">
+        <h2 class="modal__title" data-i18n="modal.tech.title">DETALLES TÉCNICOS</h2>
+      </div>
+      <div class="modal__body">
+        <p class="modal__text" data-i18n="p17.tech.intro">Flujo de trabajo optimizado para secuencias de movimiento en exteriores abiertos, controlando la consistencia lumínica del sol y reflejos de agua en la arena.</p>
+        <div class="tech-list">
+          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title" data-i18n="p17.tech.step1.title">Styling Ambiental Costero</span>
+              <span class="tech-item__desc" data-i18n="p17.tech.step1.desc">Modelado de la luz dorada directa y reflejos dinámicos del agua del océano sobre la costa.</span>
+            </div>
+          </div>\n          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title" data-i18n="p17.tech.step2.title">Performance de Personaje en Loop</span>
+              <span class="tech-item__desc" data-i18n="p17.tech.step2.desc">Generación de ciclos de caminata y baile consistentes que permiten bucles infinitos sin cortes bruscos.</span>
+            </div>
+          </div>\n          <div class="tech-item">
+            <div class="tech-content">
+              <span class="tech-item__title" data-i18n="p17.tech.step3.title">Texturizado de Pelo y Viento</span>
+              <span class="tech-item__desc" data-i18n="p17.tech.step3.desc">Simulación física detallada del pelo del oso interactuando con la brisa marina.</span>
+            </div>
+          </div>
+        </div>
+        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20me%20interesa%20un%20proyecto%20similar%20a%20Funky%20Bear%20—%20Showcase%20Visual%20Costero" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;" data-i18n="btn.quote">COTIZAR PROYECTO SIMILAR</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-costs-17" class="modal">
+    <div class="modal__content">
+      <button class="modal__close" onclick="closeModal('modal-costs-17')" aria-label="Cerrar modal">&times;</button>
+      <div class="modal__header">
+        <h2 class="modal__title" data-i18n="modal.costs.title">COMPARATIVA Y COSTOS</h2>
+      </div>
+      <div class="modal__body">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Aspecto</th>
+              <th>Tradicional</th>
+              <th class="highlight-axis">Axis Studio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Viajes de Producción</td>
+              <td>Traslado de equipo a playas lejanas</td>
+              <td class="highlight-axis">Procesamiento digital en oficina</td>
+            </tr>\n            <tr>
+              <td>Protección de Equipo</td>
+              <td>Fundas marinas, humedad, arena</td>
+              <td class="highlight-axis">Estudio digital a salvo de clima</td>
+            </tr>\n            <tr>
+              <td>Simulación de Agua</td>
+              <td>Efectos prácticos complejos de olas</td>
+              <td class="highlight-axis">Simulación física digital de fluidos</td>
+            </tr>\n            <tr>
+              <td>Licencia y Permisos</td>
+              <td>Permisos costeros marinos caros</td>
+              <td class="highlight-axis">Ambientes virtuales ilimitados</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="modal__stat">
+          <span class="modal__stat-value" data-i18n="p17.costs.stat.value">70%</span>
+          <span class="modal__stat-label" data-i18n="p17.costs.stat.label">Ahorro en traslados de crew a playas lejanas, equipos de protección contra humedad y permisos costeros.</span>
+        </div>
+        <a href="https://wa.me/529513775879?text=Hola%20Axis%20Studio,%20quiero%20solicitar%20una%20cotización" target="_blank" class="btn btn--gold" style="width:100%; margin-top:20px; text-decoration:none; justify-content:center;" data-i18n="btn.request">SOLICITAR COTIZACIÓN</a>
       </div>
     </div>
   </div>
