@@ -501,7 +501,7 @@ ul, ol {
 
 .section__header {
   text-align: center;
-  margin-bottom: var(--space-xs); /* Bring number 1 very close to the gold line */
+  margin-bottom: var(--space-md); /* Slightly separate number 1 from the gold line */
 }
 
 .section__title {
@@ -1399,99 +1399,71 @@ ul, ol {
   display: flex;
   align-items: flex-start;
   gap: var(--space-md);
-  padding: var(--space-xl);
-  border: 1px solid rgba(197, 160, 89, 0.16);
+  padding: var(--space-lg); /* Revert back to compact padding */
+  border: 1px solid rgba(197, 160, 89, 0.15); /* Sleek original border */
   border-radius: var(--border-radius-lg);
-  background: rgba(10, 10, 10, 0.7);
+  background: rgba(10, 10, 10, 0.65);
   cursor: pointer;
   position: relative;
   transition: border-color var(--transition-base), background var(--transition-base), transform var(--transition-spring), box-shadow var(--transition-base);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .services-banner__item:hover {
-  border-color: rgba(197, 160, 89, 0.5);
-  background: linear-gradient(135deg, rgba(197, 160, 89, 0.08) 0%, rgba(10, 10, 10, 0.9) 100%);
-  transform: translateY(-6px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6), 0 0 15px rgba(197, 160, 89, 0.15);
-}
-
-.services-banner__item::after {
-  content: '→';
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  color: var(--c-gold);
-  font-size: 1.2rem;
-  opacity: 0.4;
-  transform: translateX(0);
-  transition: opacity var(--transition-base), transform var(--transition-base);
-}
-
-.services-banner__item:hover::after {
-  opacity: 1;
-  transform: translateX(4px);
+  border-color: var(--c-gold); /* Bright gold border on hover for visibility */
+  background: linear-gradient(135deg, rgba(197, 160, 89, 0.12) 0%, rgba(5, 5, 5, 0.95) 100%); /* Rich background transition */
+  transform: translateY(-4px); /* Subtle elevate */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5), 0 0 15px rgba(197, 160, 89, 0.25); /* Vibrant golden outer glow */
 }
 
 .services-banner__icon {
-  width: 46px;
-  height: 46px;
+  width: 40px; /* Original compact width */
+  height: 40px; /* Original compact height */
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: var(--border-radius-md);
-  background: rgba(197, 160, 89, 0.08);
-  border: 1px solid rgba(197, 160, 89, 0.25);
+  background: rgba(197, 160, 89, 0.06);
+  border: 1px solid rgba(197, 160, 89, 0.2);
   flex-shrink: 0;
   color: var(--c-gold);
-  transition: transform var(--transition-spring), background var(--transition-base);
+  transition: transform var(--transition-spring), background var(--transition-base), color var(--transition-base), box-shadow var(--transition-base);
 }
 
 .services-banner__item:hover .services-banner__icon {
-  transform: scale(1.1) rotate(5deg);
-  background: rgba(197, 160, 89, 0.15);
+  transform: scale(1.08) rotate(3deg);
+  background: var(--c-gold); /* Icon box turns fully gold on hover */
+  color: var(--c-black); /* Icon color turns black inside gold box for high contrast */
+  box-shadow: 0 0 12px rgba(197, 160, 89, 0.5);
 }
 
 .services-banner__icon svg {
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
 }
 
 .services-banner__item-title {
-  font-size: var(--fs-base);
+  font-size: var(--fs-sm); /* Original clean font-size */
   font-weight: 700;
   color: var(--c-white);
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   transition: color var(--transition-base);
 }
 
 .services-banner__item:hover .services-banner__item-title {
-  color: var(--c-gold);
+  color: var(--c-gold); /* Glowing gold title on hover */
 }
 
 .services-banner__item-desc {
-  font-size: var(--fs-sm);
+  font-size: var(--fs-xs); /* Original compact font-size */
   font-weight: 300;
   color: var(--c-gray-400);
-  line-height: 1.6;
-  margin-bottom: 12px;
-  padding-right: 15px; /* Leave space for the arrow */
+  line-height: 1.5;
+  transition: color var(--transition-base);
 }
 
-/* Call to action inside service card */
-.services-banner__item-cta {
-  display: inline-block;
-  font-size: var(--fs-xs);
-  font-weight: 600;
-  color: var(--c-gold);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  opacity: 0.8;
-  transition: opacity var(--transition-base);
-}
-
-.services-banner__item:hover .services-banner__item-cta {
-  opacity: 1;
+.services-banner__item:hover .services-banner__item-desc {
+  color: var(--c-white); /* Description lights up on hover for active reading */
 }
 
 @media (min-width: 768px) {
