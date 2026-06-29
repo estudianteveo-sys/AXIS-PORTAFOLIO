@@ -469,15 +469,17 @@ ul, ol {
 }
 
 .btn--ghost {
-  background: transparent;
-  color: var(--c-white);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: var(--c-gold);
+  color: var(--c-black);
+  border: 1px solid var(--c-gold);
 }
 
 .btn--ghost:hover {
-  border-color: var(--c-white);
-  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--c-gold-light);
+  background: var(--c-gold-light);
+  color: var(--c-black);
   transform: translateY(-2px);
+  box-shadow: var(--shadow-gold-hover);
 }
 
 .btn--ghost:active {
@@ -1466,28 +1468,105 @@ ul, ol {
   color: var(--c-white); /* Description lights up on hover for active reading */
 }
 
-/* Gold button with black text for services banner items */
+/* Shared baseline for services banner buttons */
 .services-banner__btn {
   display: inline-block;
   margin-top: var(--space-md);
   padding: 6px 14px;
   font-size: var(--fs-xs);
   font-weight: 750;
-  color: var(--c-black);
-  background-color: var(--c-gold);
-  border: 1px solid var(--c-gold);
-  border-radius: var(--border-radius-sm);
   text-transform: uppercase;
   letter-spacing: 1px;
   cursor: pointer;
-  transition: background-color var(--transition-base), transform var(--transition-spring), box-shadow var(--transition-base);
+  transition: all var(--transition-base), transform var(--transition-spring);
 }
 
-.services-banner__item:hover .services-banner__btn {
+/* Option 1: Solid Premium Gold (Old Gold style, standard gold + black text) */
+.services-btn--style-1 {
+  background-color: var(--c-gold);
+  color: var(--c-black);
+  border: 1px solid var(--c-gold);
+  border-radius: var(--border-radius-sm);
+}
+.services-banner__item:hover .services-btn--style-1 {
   background-color: var(--c-gold-light);
   border-color: var(--c-gold-light);
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(197, 160, 89, 0.4);
+}
+
+/* Option 2: Gold Outline (Transparent bg, gold border and gold text) */
+.services-btn--style-2 {
+  background-color: transparent;
+  color: var(--c-gold);
+  border: 1px solid var(--c-gold);
+  border-radius: var(--border-radius-sm);
+}
+.services-banner__item:hover .services-btn--style-2 {
+  background-color: var(--c-gold);
+  color: var(--c-black);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(197, 160, 89, 0.3);
+}
+
+/* Option 3: Bright Gold / High Luminosity Gold (Golden-Yellow, pill shape, black text) */
+.services-btn--style-3 {
+  background-color: #D4AF37; /* Bright classic gold */
+  color: var(--c-black);
+  border: 1px solid #D4AF37;
+  border-radius: 30px; /* Pill shape */
+  font-weight: 800;
+}
+.services-banner__item:hover .services-btn--style-3 {
+  background-color: #F3C63F;
+  border-color: #F3C63F;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(212, 175, 55, 0.5);
+}
+
+/* Option 4: Gold Contrast Dark (Dark grey background, gold border, gold text) */
+.services-btn--style-4 {
+  background-color: #121212;
+  color: var(--c-gold);
+  border: 1px solid var(--c-gold);
+  border-radius: var(--border-radius-sm);
+}
+.services-banner__item:hover .services-btn--style-4 {
+  background-color: #1C1C1C;
+  border-color: var(--c-gold-light);
+  color: var(--c-gold-light);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Option 5: Gold Glassmorphic (Semi-translucent gold background, white text) */
+.services-btn--style-5 {
+  background-color: rgba(197, 160, 89, 0.12);
+  color: var(--c-white);
+  border: 1px solid rgba(197, 160, 89, 0.35);
+  border-radius: var(--border-radius-sm);
+}
+.services-banner__item:hover .services-btn--style-5 {
+  background-color: var(--c-gold);
+  border-color: var(--c-gold);
+  color: var(--c-black);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(197, 160, 89, 0.3);
+}
+
+/* Option 6: Gold Minimalist Text Link (No border, transparent, gold text, underline transition) */
+.services-btn--style-6 {
+  background-color: transparent;
+  color: var(--c-gold);
+  border: none;
+  padding: 6px 0;
+  border-bottom: 1px dashed var(--c-gold);
+  letter-spacing: 1.5px;
+}
+.services-banner__item:hover .services-btn--style-6 {
+  color: var(--c-gold-light);
+  border-bottom: 1px solid var(--c-gold-light);
+  transform: translateX(3px);
 }
 
 @media (min-width: 768px) {
