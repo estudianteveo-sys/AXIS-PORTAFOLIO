@@ -1466,6 +1466,30 @@ ul, ol {
   color: var(--c-white); /* Description lights up on hover for active reading */
 }
 
+/* Gold button with black text for services banner items */
+.services-banner__btn {
+  display: inline-block;
+  margin-top: var(--space-md);
+  padding: 6px 14px;
+  font-size: var(--fs-xs);
+  font-weight: 750;
+  color: var(--c-black);
+  background-color: var(--c-gold);
+  border: 1px solid var(--c-gold);
+  border-radius: var(--border-radius-sm);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color var(--transition-base), transform var(--transition-spring), box-shadow var(--transition-base);
+}
+
+.services-banner__item:hover .services-banner__btn {
+  background-color: var(--c-gold-light);
+  border-color: var(--c-gold-light);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(197, 160, 89, 0.4);
+}
+
 @media (min-width: 768px) {
   .services-banner__grid {
     grid-template-columns: repeat(2, 1fr);

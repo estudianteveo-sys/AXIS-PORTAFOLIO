@@ -233,9 +233,9 @@ const translations = {
     'cat.music.sub': 'Producción audiovisual con IA',
     'cat.influencers': 'INFLUENCERS DIGITALES',
     'cat.influencers.sub': 'Avatares virtuales y contenido de marca',
-    'cat.ads': 'ADS & PROMOS',
+    'cat.ads': 'ANUNCIOS',
     'cat.ads.sub': 'Campañas comerciales de alto impacto',
-    'cat.kids': 'KIDS CONTENT',
+    'cat.kids': 'CONTENIDO INFANTIL',
     'cat.kids.sub': 'Animación y contenido infantil con IA',
 
     // Shared Labels & Buttons
@@ -472,7 +472,7 @@ const translations = {
     'p14.costs.stat.label': 'Propiedad total de los avatares para uso ilimitado en campañas futuras sin costo de regalías.',
 
     // Project 15 (Peluches en Peligro)
-    'p15.title': 'Peluches en Peligro — Narrativa Dramática',
+    'p15.title': 'PELUCHES EN PELIGRO — Narrativa Dramática',
     'p15.brief': 'Ejecución brillante de narrativa dramática con personajes de peluche. Manejo excepcional de texturas, renderizado complejo de humo e interacciones físicas realistas para un universo narrativo cautivador.',
     'p15.tech.intro': 'Técnica de animación física híbrida emulando stop-motion clásica. Simulación avanzada de texturas de tela, lana e hilo bajo iluminación dramática.',
     'p15.tech.step1.title': 'Fidelidad de Textura de Felpa',
@@ -486,7 +486,7 @@ const translations = {
     'p15.costs.stat.label': 'Ahorro al evitar la fabricación de maquetas físicas, armaduras articuladas y meses de toma manual.',
 
     // Project 16 (Plastilina)
-    'p16.title': 'Animación en Plastilina — Diseño de Personajes',
+    'p16.title': 'ANIMACIÓN EN PLASTILINA — Diseño de Personajes',
     'p16.brief': 'Proyecto de animación en plastilina con alta fidelidad. Modelado físico avanzado, actuación expresiva de personajes, paleta interior rica y secuencias de comedia física dinámica.',
     'p16.tech.intro': 'Modelado tridimensional digital simulando deformación física orgánica y huellas dactilares sobre plastilina (claymation).',
     'p16.tech.step1.title': 'Modelado Orgánico de Arcilla',
@@ -500,7 +500,7 @@ const translations = {
     'p16.costs.stat.label': 'Ahorro en laboriosos procesos manuales y reducción masiva en tiempos de post-producción.',
 
     // Project 17 (Funky Bear)
-    'p17.title': 'Funky Bear — Showcase Visual Costero',
+    'p17.title': 'FUNKY BEAR — Showcase Visual Costero',
     'p17.brief': 'Viaje costero bañado de sol con performance dinámica de personajes y estilización ambiental consistente. Perfecto para plataformas de alto engagement y contenido orgánico loopable.',
     'p17.tech.intro': 'Flujo de trabajo optimizado para secuencias de movimiento en exteriores abiertos, controlando la consistencia lumínica del sol y reflejos de agua en la arena.',
     'p17.tech.step1.title': 'Styling Ambiental Costero',
@@ -528,6 +528,7 @@ const translations = {
     'svc.landing.desc': 'Creación y diseño de páginas de aterrizaje de alto rendimiento, optimizadas para conversión comercial.',
     'svc.automation.title': 'Automatizaciones',
     'svc.automation.desc': 'Diseño de automatizaciones y conectores inteligentes para acelerar tu producción de contenido.',
+    'svc.btn': 'CONTACTAR',
     'svc.cta': 'Cotizar Servicio →',
 
     // Footer
@@ -556,10 +557,10 @@ const translations = {
     'cat.music.sub': 'AI-powered music video production',
     'cat.influencers': 'DIGITAL INFLUENCERS',
     'cat.influencers.sub': 'Virtual avatars and branded content',
-    'cat.ads': 'ADS & PROMOS',
+    'cat.ads': 'ADS',
     'cat.ads.sub': 'High-impact commercial campaigns',
     'cat.kids': 'KIDS CONTENT',
-    'cat.kids.sub': 'AI-powered animation and kids\' content',
+    'cat.kids.sub': 'AI-powered animation and children\'s content',
 
     // Shared Labels & Buttons
     'label.brief': 'BRIEF:',
@@ -795,7 +796,7 @@ const translations = {
     'p14.costs.stat.label': 'Total ownership of the avatars for unlimited future use without royalty costs.',
 
     // Project 15 (Peluches en Peligro)
-    'p15.title': 'Plush in Danger — Dramatic Narrative',
+    'p15.title': 'PLUSH IN DANGER — Dramatic Narrative',
     'p15.brief': 'Brilliant dramatic narrative execution using plush toy characters. Exceptional texture handling, complex smoke rendering, and realistic physical interactions for a captivating narrative universe.',
     'p15.tech.intro': 'Hybrid physical animation technique emulating classic stop-motion. Advanced simulation of fabric, wool, and thread textures under dramatic lighting.',
     'p15.tech.step1.title': 'Plush Texture Fidelity',
@@ -809,7 +810,7 @@ const translations = {
     'p15.costs.stat.label': 'Savings by avoiding physical miniature building, articulated armatures, and months of manual shooting.',
 
     // Project 16 (Plastilina)
-    'p16.title': 'Claymation — Character Design',
+    'p16.title': 'CLAYMATION — Character Design',
     'p16.brief': 'High-fidelity claymation animation project. Advanced physical modeling, expressive character acting, rich interior palette, and dynamic physical comedy sequences.',
     'p16.tech.intro': 'Digital 3D modeling simulating organic physical deformation and fingerprints on clay (claymation).',
     'p16.tech.step1.title': 'Organic Clay Modeling',
@@ -823,7 +824,7 @@ const translations = {
     'p16.costs.stat.label': 'Savings in laborious manual processes and massive reduction in post-production times.',
 
     // Project 17 (Funky Bear)
-    'p17.title': 'Funky Bear — Coastal Visual Showcase',
+    'p17.title': 'FUNKY BEAR — Coastal Visual Showcase',
     'p17.brief': 'Sunshine-soaked coastal journey featuring dynamic character performance and consistent environmental styling. Perfect for high-engagement platforms and loopable organic content.',
     'p17.tech.intro': 'Optimized workflow for motion sequences in open outdoor spaces, controlling the consistency of direct sunlight and water reflections on sand.',
     'p17.tech.step1.title': 'Coastal Environmental Styling',
@@ -851,6 +852,7 @@ const translations = {
     'svc.landing.desc': 'Creating and designing high-performance landing pages optimized for business conversion.',
     'svc.automation.title': 'Automations',
     'svc.automation.desc': 'Designing automations and smart connectors to accelerate your content production.',
+    'svc.btn': 'CONTACT',
     'svc.cta': 'Request Service →',
 
     // Footer
