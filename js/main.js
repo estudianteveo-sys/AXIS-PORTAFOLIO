@@ -528,6 +528,7 @@ const translations = {
     'svc.landing.desc': 'Creación y diseño de páginas de aterrizaje de alto rendimiento, optimizadas para conversión comercial.',
     'svc.automation.title': 'Automatizaciones',
     'svc.automation.desc': 'Diseño de automatizaciones y conectores inteligentes para acelerar tu producción de contenido.',
+    'svc.cta': 'Cotizar Servicio →',
 
     // Footer
     'footer.copyright': '© 2026 Axis Studio. Todos los derechos reservados.',
@@ -850,6 +851,7 @@ const translations = {
     'svc.landing.desc': 'Creating and designing high-performance landing pages optimized for business conversion.',
     'svc.automation.title': 'Automations',
     'svc.automation.desc': 'Designing automations and smart connectors to accelerate your content production.',
+    'svc.cta': 'Request Service →',
 
     // Footer
     'footer.copyright': '© 2026 Axis Studio. All rights reserved.',
@@ -916,4 +918,37 @@ function setLanguage(lang) {
     }
   });
 }
+
+/* === CONTACT SERVICE VIA WHATSAPP === */
+function contactService(serviceKey) {
+  const lang = document.documentElement.lang || 'es';
+  const serviceNames = {
+    es: {
+      'tutoring': 'Tutoría Personalizada',
+      'implementation': 'Implementación de IA',
+      'consulting': 'Consultoría Creativa',
+      'apps': 'Desarrollo de Apps',
+      'landing': 'Landing Pages',
+      'automation': 'Automatizaciones'
+    },
+    en: {
+      'tutoring': 'Personalized Tutoring',
+      'implementation': 'AI Implementation',
+      'consulting': 'Creative Consulting',
+      'apps': 'App Development',
+      'landing': 'Landing Pages',
+      'automation': 'Automations'
+    }
+  };
+  
+  const serviceName = serviceNames[lang][serviceKey] || serviceKey;
+  let msg = '';
+  if (lang === 'en') {
+    msg = `Hello Axis Studio, I am interested in the "${serviceName}" service.`;
+  } else {
+    msg = `Hola Axis Studio, me interesa el servicio de "${serviceName}".`;
+  }
+  window.open(`https://wa.me/529513775879?text=${encodeURIComponent(msg)}`, '_blank');
+}
+
 

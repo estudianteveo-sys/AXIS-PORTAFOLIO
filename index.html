@@ -157,7 +157,6 @@
           <div class="category-header reveal">
             <span class="category-header__number">1</span>
             <h2 class="category-header__title" data-i18n="cat.storytelling">STORYTELLING</h2>
-            <p class="category-header__subtitle" data-i18n="cat.storytelling.sub">Narrativa visual y realismo mágico</p>
             <div class="category-header__line"><span class="category-header__ornament"></span></div>
           </div>
           <div class="projects-grid">
@@ -236,7 +235,6 @@
           <div class="category-header reveal">
             <span class="category-header__number">2</span>
             <h2 class="category-header__title" data-i18n="cat.music">VIDEOS MUSICALES</h2>
-            <p class="category-header__subtitle" data-i18n="cat.music.sub">Producción audiovisual con IA</p>
             <div class="category-header__line"><span class="category-header__ornament"></span></div>
           </div>
           <div class="projects-grid">
@@ -337,7 +335,6 @@
           <div class="category-header reveal">
             <span class="category-header__number">3</span>
             <h2 class="category-header__title" data-i18n="cat.influencers">INFLUENCERS DIGITALES</h2>
-            <p class="category-header__subtitle" data-i18n="cat.influencers.sub">Avatares virtuales y contenido de marca</p>
             <div class="category-header__line"><span class="category-header__ornament"></span></div>
           </div>
           <div class="projects-grid">
@@ -416,7 +413,6 @@
           <div class="category-header reveal">
             <span class="category-header__number">4</span>
             <h2 class="category-header__title" data-i18n="cat.ads">ADS & PROMOS</h2>
-            <p class="category-header__subtitle" data-i18n="cat.ads.sub">Campañas comerciales de alto impacto</p>
             <div class="category-header__line"><span class="category-header__ornament"></span></div>
           </div>
           <div class="projects-grid">
@@ -517,7 +513,6 @@
           <div class="category-header reveal">
             <span class="category-header__number">5</span>
             <h2 class="category-header__title" data-i18n="cat.kids">KIDS CONTENT</h2>
-            <p class="category-header__subtitle" data-i18n="cat.kids.sub">Animación y contenido infantil con IA</p>
             <div class="category-header__line"><span class="category-header__ornament"></span></div>
           </div>
           <div class="projects-grid">
@@ -593,6 +588,7 @@
     </section>
 
     <!-- ========== SERVICES BANNER ========== -->
+    <!-- ========== SERVICES BANNER ========== -->
     <section class="services-banner" id="services">
       <div class="container">
         <div class="services-banner__header reveal">
@@ -601,7 +597,7 @@
         </div>
         <div class="services-banner__grid reveal">
           <!-- Tutoría -->
-          <div class="services-banner__item">
+          <div class="services-banner__item" onclick="contactService('tutoring')">
             <div class="services-banner__icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
@@ -611,10 +607,11 @@
             <div>
               <h3 class="services-banner__item-title" data-i18n="svc.tutoring.title">Tutoría Personalizada</h3>
               <p class="services-banner__item-desc" data-i18n="svc.tutoring.desc">Formación práctica en herramientas de IA generativa para creadores y editores de video.</p>
+              <span class="services-banner__item-cta" data-i18n="svc.cta">Cotizar Servicio →</span>
             </div>
           </div>
           <!-- Implementación -->
-          <div class="services-banner__item">
+          <div class="services-banner__item" onclick="contactService('implementation')">
             <div class="services-banner__icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <rect x="4" y="4" width="16" height="16" rx="2" ry="2"/>
@@ -632,10 +629,11 @@
             <div>
               <h3 class="services-banner__item-title" data-i18n="svc.implementation.title">Implementación de IA</h3>
               <p class="services-banner__item-desc" data-i18n="svc.implementation.desc">Integración de flujos de trabajo eficientes con IA en tu estructura de producción actual.</p>
+              <span class="services-banner__item-cta" data-i18n="svc.cta">Cotizar Servicio →</span>
             </div>
           </div>
           <!-- Consultoría -->
-          <div class="services-banner__item">
+          <div class="services-banner__item" onclick="contactService('consulting')">
             <div class="services-banner__icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A5 5 0 0 0 8 8c0 1 .3 2.5 1 3.5l1.5 2.5"/>
@@ -646,10 +644,11 @@
             <div>
               <h3 class="services-banner__item-title" data-i18n="svc.consulting.title">Consultoría Creativa</h3>
               <p class="services-banner__item-desc" data-i18n="svc.consulting.desc">Estrategia, dirección de arte e ingeniería de prompts personalizada para tus proyectos.</p>
+              <span class="services-banner__item-cta" data-i18n="svc.cta">Cotizar Servicio →</span>
             </div>
           </div>
           <!-- Desarrollo de Apps -->
-          <div class="services-banner__item">
+          <div class="services-banner__item" onclick="contactService('apps')">
             <div class="services-banner__icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
@@ -659,10 +658,11 @@
             <div>
               <h3 class="services-banner__item-title" data-i18n="svc.apps.title">Desarrollo de Apps</h3>
               <p class="services-banner__item-desc" data-i18n="svc.apps.desc">Desarrollo a medida de aplicaciones móviles y web con integración directa de APIs de IA.</p>
+              <span class="services-banner__item-cta" data-i18n="svc.cta">Cotizar Servicio →</span>
             </div>
           </div>
           <!-- Landing Pages -->
-          <div class="services-banner__item">
+          <div class="services-banner__item" onclick="contactService('landing')">
             <div class="services-banner__icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="12" cy="12" r="10"/>
@@ -673,10 +673,11 @@
             <div>
               <h3 class="services-banner__item-title" data-i18n="svc.landing.title">Landing Pages</h3>
               <p class="services-banner__item-desc" data-i18n="svc.landing.desc">Creación y diseño de páginas de aterrizaje de alto rendimiento, optimizadas para conversión comercial.</p>
+              <span class="services-banner__item-cta" data-i18n="svc.cta">Cotizar Servicio →</span>
             </div>
           </div>
           <!-- Automatizaciones -->
-          <div class="services-banner__item">
+          <div class="services-banner__item" onclick="contactService('automation')">
             <div class="services-banner__icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="9" cy="9" r="5"/>
@@ -688,6 +689,7 @@
             <div>
               <h3 class="services-banner__item-title" data-i18n="svc.automation.title">Automatizaciones</h3>
               <p class="services-banner__item-desc" data-i18n="svc.automation.desc">Diseño de automatizaciones y conectores inteligentes para acelerar tu producción de contenido.</p>
+              <span class="services-banner__item-cta" data-i18n="svc.cta">Cotizar Servicio →</span>
             </div>
           </div>
         </div>
