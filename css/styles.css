@@ -608,15 +608,15 @@ ul, ol {
   justify-content: center;
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 24px; /* Move play button to the left side of the video preview */
+  transform: translateY(-50%);
   z-index: 3;
   transition: transform var(--transition-spring), box-shadow var(--transition-base), background-color var(--transition-base);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5), 0 0 0 0px rgba(197, 160, 89, 0.3);
 }
 
 .project-card:hover .play-btn {
-  transform: translate(-50%, -50%) scale(1.08);
+  transform: translateY(-50%) scale(1.08);
   background-color: var(--c-gold-light);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6), 0 0 0 8px rgba(197, 160, 89, 0.2);
 }
@@ -1251,6 +1251,17 @@ ul, ol {
   cursor: pointer;
   transition: all var(--transition-fast);
   user-select: none;
+}
+
+@media (max-width: 768px) {
+  .lang-toggle {
+    margin-right: var(--space-xs); /* Reduce margin to save space */
+  }
+  .lang-toggle__option {
+    padding: 3px 8px; /* Slightly tighter padding on mobile */
+    font-size: 0.72rem; /* Tighter font size */
+    letter-spacing: 0.5px;
+  }
 }
 
 .lang-toggle__option.active {
