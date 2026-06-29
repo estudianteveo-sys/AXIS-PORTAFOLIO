@@ -617,8 +617,8 @@ ul, ol {
 }
 
 .play-btn svg {
-  width: 46px; /* Large play triangle */
-  height: 46px;
+  width: 64px; /* Much larger play triangle (Option 1) */
+  height: 64px;
   color: var(--c-gold); /* Solid gold fill color */
   filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.85)); /* High contrast shadow behind the triangle */
   transition: color var(--transition-base), filter var(--transition-base);
