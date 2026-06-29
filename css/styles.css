@@ -1362,24 +1362,24 @@ ul, ol {
 
 .services-banner__header {
   text-align: center;
-  margin-bottom: var(--space-4xl);
+  margin-bottom: var(--space-lg); /* Reduce spacing between text and the cards grid */
   position: relative;
   z-index: 1;
 }
 
 .services-banner__eyebrow {
-  font-size: var(--fs-xs);
+  font-size: var(--fs-md); /* Make "TAMBIÉN OFRECEMOS" visibly larger */
   font-weight: 650;
   letter-spacing: 5px;
   text-transform: uppercase;
   color: var(--c-gold);
-  margin-bottom: var(--space-sm);
+  margin-bottom: var(--space-xs); /* Bring it closer to the main title */
   display: block;
   text-shadow: 0 0 10px rgba(197, 160, 89, 0.3);
 }
 
 .services-banner__title {
-  font-size: var(--fs-3xl);
+  font-size: var(--fs-xl); /* Make "SERVICIOS PROFESIONALES" smaller to match design hierarchy */
   font-weight: 800;
   letter-spacing: 4px;
   text-transform: uppercase;
