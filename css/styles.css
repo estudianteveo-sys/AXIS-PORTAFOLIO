@@ -604,7 +604,7 @@ ul, ol {
   justify-content: center;
   position: absolute;
   top: 50%;
-  left: 24px; /* Move play button to the left side of the video preview */
+  left: 16px; /* Shifted further to the left */
   transform: translateY(-50%);
   z-index: 3;
   transition: transform var(--transition-spring);
@@ -1161,7 +1161,7 @@ ul, ol {
 
   /* Web/desktop scale overrides for play button */
   .play-btn {
-    left: 32px;
+    left: 24px; /* Shifted further to the left */
   }
   .play-btn svg {
     width: 80px;
